@@ -36,29 +36,39 @@ def encode_text_into_plane(image, text, output_path, plane="RGB"):
     img = image.convert("RGBA")  # Ensure image has alpha channel
     width, height = img.size
     binary_text = ''.join(format(ord(char), '08b') for char in text) + '00000000'  # Add terminator
-    pixel_capacity = width * height  # Capacity per plane
 
-    if len(binary_text) > pixel_capacity:
+    # Calculate capacity based on selected planes
+    num_planes = sum([1 for p in ['R', 'G', 'B', 'A'] if p in plane])
+    total_capacity = width * height * num_planes
+
+    if len(binary_text) > total_capacity:
         raise ValueError("The message is too long for this image.")
 
     index = 0
     for y in range(height):
         for x in range(width):
-            if index < len(binary_text):
-                r, g, b, a = img.getpixel((x, y))
+            r, g, b, a = img.getpixel((x, y))
 
-                # Embed into selected plane(s)
-                if 'R' in plane:
-                    r = (r & 0xFE) | int(binary_text[index])  # LSB of red
-                if 'G' in plane:
-                    g = (g & 0xFE) | int(binary_text[(index + 1) % len(binary_text)])  # LSB of green
-                if 'B' in plane:
-                    b = (b & 0xFE) | int(binary_text[(index + 2) % len(binary_text)])  # LSB of blue
-                if 'A' in plane:
-                    a = (a & 0xFE) | int(binary_text[(index + 3) % len(binary_text)])  # LSB of alpha
+            # Embed into selected plane(s) sequentially
+            if 'R' in plane and index < len(binary_text):
+                r = (r & 0xFE) | int(binary_text[index])
+                index += 1
+            if 'G' in plane and index < len(binary_text):
+                g = (g & 0xFE) | int(binary_text[index])
+                index += 1
+            if 'B' in plane and index < len(binary_text):
+                b = (b & 0xFE) | int(binary_text[index])
+                index += 1
+            if 'A' in plane and index < len(binary_text):
+                a = (a & 0xFE) | int(binary_text[index])
+                index += 1
 
-                img.putpixel((x, y), (r, g, b, a))
-                index += 1 if 'A' in plane else 3  # Increment accordingly
+            img.putpixel((x, y), (r, g, b, a))
+
+            if index >= len(binary_text):
+                break
+        if index >= len(binary_text):
+            break
 
     img.save(output_path, format="PNG")
 
@@ -69,30 +79,40 @@ def encode_zlib_into_image(image, file_data, output_path, plane="RGB"):
     compressed_data = zlib.compress(file_data)
     binary_data = ''.join(format(byte, '08b') for byte in compressed_data) + '00000000'  # Add terminator
     width, height = image.size
-    pixel_capacity = width * height  # Capacity per plane
 
-    if len(binary_data) > pixel_capacity:
+    # Calculate capacity based on selected planes
+    num_planes = sum([1 for p in ['R', 'G', 'B', 'A'] if p in plane])
+    total_capacity = width * height * num_planes
+
+    if len(binary_data) > total_capacity:
         raise ValueError("The compressed data is too long for this image.")
 
     img = image.convert("RGBA")  # Ensure image has alpha channel
     index = 0
     for y in range(height):
         for x in range(width):
-            if index < len(binary_data):
-                r, g, b, a = img.getpixel((x, y))
+            r, g, b, a = img.getpixel((x, y))
 
-                # Embed into selected plane(s)
-                if 'R' in plane:
-                    r = (r & 0xFE) | int(binary_data[index])  # LSB of red
-                if 'G' in plane:
-                    g = (g & 0xFE) | int(binary_data[(index + 1) % len(binary_data)])  # LSB of green
-                if 'B' in plane:
-                    b = (b & 0xFE) | int(binary_data[(index + 2) % len(binary_data)])  # LSB of blue
-                if 'A' in plane:
-                    a = (a & 0xFE) | int(binary_data[(index + 3) % len(binary_data)])  # LSB of alpha
+            # Embed into selected plane(s) sequentially
+            if 'R' in plane and index < len(binary_data):
+                r = (r & 0xFE) | int(binary_data[index])
+                index += 1
+            if 'G' in plane and index < len(binary_data):
+                g = (g & 0xFE) | int(binary_data[index])
+                index += 1
+            if 'B' in plane and index < len(binary_data):
+                b = (b & 0xFE) | int(binary_data[index])
+                index += 1
+            if 'A' in plane and index < len(binary_data):
+                a = (a & 0xFE) | int(binary_data[index])
+                index += 1
 
-                img.putpixel((x, y), (r, g, b, a))
-                index += 1 if 'A' in plane else 3  # Increment accordingly
+            img.putpixel((x, y), (r, g, b, a))
+
+            if index >= len(binary_data):
+                break
+        if index >= len(binary_data):
+            break
 
     img.save(output_path, format="PNG")
 
