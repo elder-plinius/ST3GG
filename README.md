@@ -17,6 +17,8 @@
 
 **Hide anything. In any file. Across every modality. Undetected.**
 
+👉 **Hosted site:** [ste.gg](https://ste.gg)
+
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://python.org)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
