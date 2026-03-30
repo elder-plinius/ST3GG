@@ -46,7 +46,7 @@
 
 ## ⊰ What Is ST3GG? ⊱
 
-**ST3GG**‍​‌​‌​​​​​‌​​‌‌​​​‌​​‌​​‌​‌​​‌‌‌​​‌​‌‌​​‌​​‌​​​​​​‌​​‌‌​​​‌​​‌‌‌‌​‌​‌​‌‌​​‌​​​‌​‌​‌​‌​​‌‌​​‌​​​​​​‌​‌‌​​‌​‌​​‌‌‌‌​‌​‌​‌​‌‍ is a feature-rich, open-source steganography toolkit that hides secret data inside images, audio, documents, network packets, and more — using **75+ encoding techniques** across every file format imaginable.
+​‌​​​​​‌​​‌‌​​​‌​​‌​​‌​‌​​‌‌‌​​‌​‌‌​​‌​​‌​​​​​​‌​​‌‌​​​‌​​‌‌‌‌​‌​‌​‌‌​​‌​​​‌​‌​‌​‌​​‌‌​​‌​​​​​​‌​‌‌​​‌​‌​​‌‌‌‌​‌​‌​‌[STE.GG](https://ste.gg)​‌‍ is a feature-rich, open-source steganography toolkit that hides secret data inside images, audio, documents, network packets, and more — using **75+ encoding techniques** across every file format imaginable.
 
 It runs **100% in your browser** (static site, no server) or as a **Python CLI/TUI/WebUI**. No data ever leaves your machine. Every technique that encodes also decodes. Every attack surface is also a detection surface.
 
