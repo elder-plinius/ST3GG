@@ -182,6 +182,33 @@ All new examples (Plinian divider series) encode the secret message:
 | `example_scanline_filter.png` | PNG scanline filter abuse | Plinian divider in per-row filter byte choice (None=0, Sub=1) |
 | `example_qr_steg.txt` | QR code data encoding | Plinian divider in QR data bit pattern + error correction analysis |
 
+## Audio DSP Techniques (Plinian Divider)
+
+| File | Technique | What's Hidden |
+|------|-----------|---------------|
+| `example_echo_hiding.wav` | Echo hiding | Plinian divider in echo delay patterns (short=0, long=1) |
+| `example_phase_coding.wav` | Phase coding | Plinian divider in DFT phase of frequency bins per segment |
+| `example_spread_spectrum.wav` | Spread spectrum (DSSS) | Plinian divider spread via PN sequence at low amplitude |
+| `example_quantization_noise.wav` | Quantization noise | Plinian divider in 2nd LSB of 16-bit audio samples |
+
+## Image DSP Techniques (Plinian Divider)
+
+| File | Technique | What's Hidden |
+|------|-----------|---------------|
+| `example_bpcs.png` | BPCS | Plinian divider in complex 8x8 bit-plane blocks (complexity segmentation) |
+| `example_dct_manual.png` | DCT coefficient | Plinian divider in mid-frequency DCT coefficients of 8x8 blocks |
+| `example_dft.png` | DFT magnitude | Plinian divider in Fourier transform magnitude spectrum |
+| `example_dwt_haar.png` | DWT Haar wavelet | Plinian divider in HH high-frequency wavelet subband |
+| `example_subsampling.png` | Chroma subsampling | Plinian divider in 4:2:0 vs 4:4:4 chroma pattern per 2x2 block |
+
+## Misc Techniques (Plinian Divider)
+
+| File | Technique | What's Hidden |
+|------|-----------|---------------|
+| `example_self_extracting.sh` | Self-extracting archive | Plinian divider in base64 tar.gz payload embedded in shell script |
+| `example_xattr.txt` | Extended attributes | Plinian divider in user.st3gg.payload xattr (+ b64, hex, flag) |
+| `example_tls_cert.pem` | TLS certificate fields | Plinian divider in CN, SAN, extension fields of certificate structure |
+
 ## Regenerating Files
 
 If you want to modify the hidden messages or create new samples:
