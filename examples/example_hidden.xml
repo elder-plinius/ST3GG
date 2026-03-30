@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?steg-payload 4oqw4oCiLeKAouKcp+KAoi3igKIt4qaRL0xcTy9WXEUvXFAvTFxJL05cWS/ippIt4oCiLeKAouKcp+KAoi3igKLiirE=?>
+<!-- ⊰•-•✧•-•-⦑/L\O/V\E/\P/L\I/N\Y/⦒-•-•✧•-•⊱ -->
+<dinosaurs xmlns:steg="http://st3gg.example.com/steg"
+           steg:payload="e28ab0e280a22de280a2e29ca7e280a22de280a22de2a6912f4c5c4f2f565c452f5c502f4c5c492f4e5c592fe2a6922de280a22de280a2e29ca7e280a22de280a2e28ab1">
+    <species name="Stegosaurus" period="Late Jurassic">
+        <description>Large herbivorous thyreophoran dinosaur</description>
+        <weight unit="kg">5000</weight>
+        <length unit="m">9</length>
+        <features>
+            <feature>Dorsal plates</feature>
+            <feature>Thagomizer (tail spikes)</feature>
+            <feature>Small brain cavity</feature>
+        </features>
+        <hidden><![CDATA[⊰•-•✧•-•-⦑/L\O/V\E/\P/L\I/N\Y/⦒-•-•✧•-•⊱]]></hidden>
+    </species>
+    <species name="Ankylosaurus" period="Late Cretaceous">
+        <description>Armored dinosaur with club tail</description>
+        <weight unit="kg">6000</weight>
+        <length unit="m">7</length>
+    </species>
+    <!-- base64:4oqw4oCiLeKAouKcp+KAoi3igKIt4qaRL0xcTy9WXEUvXFAvTFxJL05cWS/ippIt4oCiLeKAouKcp+KAoi3igKLiirE= -->
+</dinosaurs>

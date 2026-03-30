@@ -1,0 +1,4489 @@
+{
+ "_schema": "paleontology-measurements-v2",
+ "_generator": "ST3GG STEGOSAURUS WRECKS",
+ "_metadata": {
+  "payload_b64": "4oqw4oCiLeKAouKcp+KAoi3igKIt4qaRL0xcTy9WXEUvXFAvTFxJL05cWS/ippIt4oCiLeKAouKcp+KAoi3igKLiirE="
+ },
+ "measurements": [
+  {
+   "id": 1,
+   "specimen": "Stegosaurus",
+   "value": 5000,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": false
+  },
+  {
+   "id": 2,
+   "specimen": "Triceratops",
+   "value": 6001,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "id": 3,
+   "specimen": "Tyrannosaurus",
+   "value": 8402,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": true
+  },
+  {
+   "id": 4,
+   "specimen": "Velociraptor",
+   "value": 18,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": false
+  },
+  {
+   "id": 5,
+   "specimen": "Brachiosaurus",
+   "value": 56004,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": true
+  },
+  {
+   "id": 6,
+   "specimen": "Diplodocus",
+   "value": 16005,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "id": 7,
+   "specimen": "Allosaurus",
+   "value": 2306,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": false
+  },
+  {
+   "id": 8,
+   "specimen": "Spinosaurus",
+   "value": 7407,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "id": 9,
+   "specimen": "Ankylosaurus",
+   "value": 6008,
+   "unit": "kg",
+   "confidence": 0.87,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 2509,
+   "specimen": "Parasaurolophus",
+   "id": 10
+  },
+  {
+   "id": 11,
+   "specimen": "Stegosaurus",
+   "value": 5010,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "id": 12,
+   "specimen": "Triceratops",
+   "value": 6011,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "id": 13,
+   "specimen": "Tyrannosaurus",
+   "value": 8412,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.9199999999999999,
+   "unit": "kg",
+   "value": 28,
+   "specimen": "Velociraptor",
+   "id": 14
+  },
+  {
+   "id": 15,
+   "specimen": "Brachiosaurus",
+   "value": 56014,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": true
+  },
+  {
+   "id": 16,
+   "specimen": "Diplodocus",
+   "value": 16015,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2316,
+   "specimen": "Allosaurus",
+   "id": 17
+  },
+  {
+   "verified": true,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7417,
+   "specimen": "Spinosaurus",
+   "id": 18
+  },
+  {
+   "verified": false,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6018,
+   "specimen": "Ankylosaurus",
+   "id": 19
+  },
+  {
+   "id": 20,
+   "specimen": "Parasaurolophus",
+   "value": 2519,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "id": 21,
+   "specimen": "Stegosaurus",
+   "value": 5020,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "id": 22,
+   "specimen": "Triceratops",
+   "value": 6021,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8422,
+   "specimen": "Tyrannosaurus",
+   "id": 23
+  },
+  {
+   "id": 24,
+   "specimen": "Velociraptor",
+   "value": 38,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56024,
+   "specimen": "Brachiosaurus",
+   "id": 25
+  },
+  {
+   "id": 26,
+   "specimen": "Diplodocus",
+   "value": 16025,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "id": 27,
+   "specimen": "Allosaurus",
+   "value": 2326,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "id": 28,
+   "specimen": "Spinosaurus",
+   "value": 7427,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6028,
+   "specimen": "Ankylosaurus",
+   "id": 29
+  },
+  {
+   "id": 30,
+   "specimen": "Parasaurolophus",
+   "value": 2529,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5030,
+   "specimen": "Stegosaurus",
+   "id": 31
+  },
+  {
+   "id": 32,
+   "specimen": "Triceratops",
+   "value": 6031,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8432,
+   "specimen": "Tyrannosaurus",
+   "id": 33
+  },
+  {
+   "id": 34,
+   "specimen": "Velociraptor",
+   "value": 48,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56034,
+   "specimen": "Brachiosaurus",
+   "id": 35
+  },
+  {
+   "verified": true,
+   "confidence": 0.8999999999999999,
+   "unit": "kg",
+   "value": 16035,
+   "specimen": "Diplodocus",
+   "id": 36
+  },
+  {
+   "id": 37,
+   "specimen": "Allosaurus",
+   "value": 2336,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": false
+  },
+  {
+   "id": 38,
+   "specimen": "Spinosaurus",
+   "value": 7437,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "id": 39,
+   "specimen": "Ankylosaurus",
+   "value": 6038,
+   "unit": "kg",
+   "confidence": 0.87,
+   "verified": true
+  },
+  {
+   "id": 40,
+   "specimen": "Parasaurolophus",
+   "value": 2539,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5040,
+   "specimen": "Stegosaurus",
+   "id": 41
+  },
+  {
+   "verified": true,
+   "confidence": 0.94,
+   "unit": "kg",
+   "value": 6041,
+   "specimen": "Triceratops",
+   "id": 42
+  },
+  {
+   "verified": false,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8442,
+   "specimen": "Tyrannosaurus",
+   "id": 43
+  },
+  {
+   "id": 44,
+   "specimen": "Velociraptor",
+   "value": 58,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "id": 45,
+   "specimen": "Brachiosaurus",
+   "value": 56044,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": true
+  },
+  {
+   "id": 46,
+   "specimen": "Diplodocus",
+   "value": 16045,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2346,
+   "specimen": "Allosaurus",
+   "id": 47
+  },
+  {
+   "id": 48,
+   "specimen": "Spinosaurus",
+   "value": 7447,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6048,
+   "specimen": "Ankylosaurus",
+   "id": 49
+  },
+  {
+   "id": 50,
+   "specimen": "Parasaurolophus",
+   "value": 2549,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "id": 51,
+   "specimen": "Stegosaurus",
+   "value": 5050,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "id": 52,
+   "specimen": "Triceratops",
+   "value": 6051,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": false
+  },
+  {
+   "id": 53,
+   "specimen": "Tyrannosaurus",
+   "value": 8452,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": true
+  },
+  {
+   "id": 54,
+   "specimen": "Velociraptor",
+   "value": 68,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "id": 55,
+   "specimen": "Brachiosaurus",
+   "value": 56054,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": false
+  },
+  {
+   "id": 56,
+   "specimen": "Diplodocus",
+   "value": 16055,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2356,
+   "specimen": "Allosaurus",
+   "id": 57
+  },
+  {
+   "id": 58,
+   "specimen": "Spinosaurus",
+   "value": 7457,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6058,
+   "specimen": "Ankylosaurus",
+   "id": 59
+  },
+  {
+   "id": 60,
+   "specimen": "Parasaurolophus",
+   "value": 2559,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "id": 61,
+   "specimen": "Stegosaurus",
+   "value": 5060,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": false
+  },
+  {
+   "id": 62,
+   "specimen": "Triceratops",
+   "value": 6061,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8462,
+   "specimen": "Tyrannosaurus",
+   "id": 63
+  },
+  {
+   "id": 64,
+   "specimen": "Velociraptor",
+   "value": 78,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": false
+  },
+  {
+   "id": 65,
+   "specimen": "Brachiosaurus",
+   "value": 56064,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": true
+  },
+  {
+   "id": 66,
+   "specimen": "Diplodocus",
+   "value": 16065,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2366,
+   "specimen": "Allosaurus",
+   "id": 67
+  },
+  {
+   "id": 68,
+   "specimen": "Spinosaurus",
+   "value": 7467,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6068,
+   "specimen": "Ankylosaurus",
+   "id": 69
+  },
+  {
+   "verified": false,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 2569,
+   "specimen": "Parasaurolophus",
+   "id": 70
+  },
+  {
+   "id": 71,
+   "specimen": "Stegosaurus",
+   "value": 5070,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.94,
+   "unit": "kg",
+   "value": 6071,
+   "specimen": "Triceratops",
+   "id": 72
+  },
+  {
+   "verified": false,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8472,
+   "specimen": "Tyrannosaurus",
+   "id": 73
+  },
+  {
+   "verified": true,
+   "confidence": 0.9199999999999999,
+   "unit": "kg",
+   "value": 88,
+   "specimen": "Velociraptor",
+   "id": 74
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56074,
+   "specimen": "Brachiosaurus",
+   "id": 75
+  },
+  {
+   "id": 76,
+   "specimen": "Diplodocus",
+   "value": 16075,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": false
+  },
+  {
+   "id": 77,
+   "specimen": "Allosaurus",
+   "value": 2376,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "id": 78,
+   "specimen": "Spinosaurus",
+   "value": 7477,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6078,
+   "specimen": "Ankylosaurus",
+   "id": 79
+  },
+  {
+   "id": 80,
+   "specimen": "Parasaurolophus",
+   "value": 2579,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5080,
+   "specimen": "Stegosaurus",
+   "id": 81
+  },
+  {
+   "id": 82,
+   "specimen": "Triceratops",
+   "value": 6081,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": false
+  },
+  {
+   "id": 83,
+   "specimen": "Tyrannosaurus",
+   "value": 8482,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": true
+  },
+  {
+   "id": 84,
+   "specimen": "Velociraptor",
+   "value": 98,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "id": 85,
+   "specimen": "Brachiosaurus",
+   "value": 56084,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": false
+  },
+  {
+   "id": 86,
+   "specimen": "Diplodocus",
+   "value": 16085,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "id": 87,
+   "specimen": "Allosaurus",
+   "value": 2386,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "id": 88,
+   "specimen": "Spinosaurus",
+   "value": 7487,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6088,
+   "specimen": "Ankylosaurus",
+   "id": 89
+  },
+  {
+   "id": 90,
+   "specimen": "Parasaurolophus",
+   "value": 2589,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5090,
+   "specimen": "Stegosaurus",
+   "id": 91
+  },
+  {
+   "id": 92,
+   "specimen": "Triceratops",
+   "value": 6091,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "id": 93,
+   "specimen": "Tyrannosaurus",
+   "value": 8492,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": true
+  },
+  {
+   "id": 94,
+   "specimen": "Velociraptor",
+   "value": 108,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56094,
+   "specimen": "Brachiosaurus",
+   "id": 95
+  },
+  {
+   "id": 96,
+   "specimen": "Diplodocus",
+   "value": 16095,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2396,
+   "specimen": "Allosaurus",
+   "id": 97
+  },
+  {
+   "verified": true,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7497,
+   "specimen": "Spinosaurus",
+   "id": 98
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6098,
+   "specimen": "Ankylosaurus",
+   "id": 99
+  },
+  {
+   "id": 100,
+   "specimen": "Parasaurolophus",
+   "value": 2599,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": false
+  },
+  {
+   "id": 101,
+   "specimen": "Stegosaurus",
+   "value": 5100,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "id": 102,
+   "specimen": "Triceratops",
+   "value": 6101,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8502,
+   "specimen": "Tyrannosaurus",
+   "id": 103
+  },
+  {
+   "id": 104,
+   "specimen": "Velociraptor",
+   "value": 118,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56104,
+   "specimen": "Brachiosaurus",
+   "id": 105
+  },
+  {
+   "id": 106,
+   "specimen": "Diplodocus",
+   "value": 16105,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": false
+  },
+  {
+   "id": 107,
+   "specimen": "Allosaurus",
+   "value": 2406,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7507,
+   "specimen": "Spinosaurus",
+   "id": 108
+  },
+  {
+   "verified": false,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6108,
+   "specimen": "Ankylosaurus",
+   "id": 109
+  },
+  {
+   "verified": true,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 2609,
+   "specimen": "Parasaurolophus",
+   "id": 110
+  },
+  {
+   "id": 111,
+   "specimen": "Stegosaurus",
+   "value": 5110,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "id": 112,
+   "specimen": "Triceratops",
+   "value": 6111,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8512,
+   "specimen": "Tyrannosaurus",
+   "id": 113
+  },
+  {
+   "id": 114,
+   "specimen": "Velociraptor",
+   "value": 128,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56114,
+   "specimen": "Brachiosaurus",
+   "id": 115
+  },
+  {
+   "id": 116,
+   "specimen": "Diplodocus",
+   "value": 16115,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "id": 117,
+   "specimen": "Allosaurus",
+   "value": 2416,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7517,
+   "specimen": "Spinosaurus",
+   "id": 118
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6118,
+   "specimen": "Ankylosaurus",
+   "id": 119
+  },
+  {
+   "verified": true,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 2619,
+   "specimen": "Parasaurolophus",
+   "id": 120
+  },
+  {
+   "verified": false,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5120,
+   "specimen": "Stegosaurus",
+   "id": 121
+  },
+  {
+   "verified": true,
+   "confidence": 0.94,
+   "unit": "kg",
+   "value": 6121,
+   "specimen": "Triceratops",
+   "id": 122
+  },
+  {
+   "verified": true,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8522,
+   "specimen": "Tyrannosaurus",
+   "id": 123
+  },
+  {
+   "id": 124,
+   "specimen": "Velociraptor",
+   "value": 138,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": false
+  },
+  {
+   "id": 125,
+   "specimen": "Brachiosaurus",
+   "value": 56124,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": true
+  },
+  {
+   "id": 126,
+   "specimen": "Diplodocus",
+   "value": 16125,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2426,
+   "specimen": "Allosaurus",
+   "id": 127
+  },
+  {
+   "id": 128,
+   "specimen": "Spinosaurus",
+   "value": 7527,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6128,
+   "specimen": "Ankylosaurus",
+   "id": 129
+  },
+  {
+   "id": 130,
+   "specimen": "Parasaurolophus",
+   "value": 2629,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": false
+  },
+  {
+   "id": 131,
+   "specimen": "Stegosaurus",
+   "value": 5130,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "id": 132,
+   "specimen": "Triceratops",
+   "value": 6131,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "id": 133,
+   "specimen": "Tyrannosaurus",
+   "value": 8532,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": false
+  },
+  {
+   "id": 134,
+   "specimen": "Velociraptor",
+   "value": 148,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "id": 135,
+   "specimen": "Brachiosaurus",
+   "value": 56134,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": true
+  },
+  {
+   "id": 136,
+   "specimen": "Diplodocus",
+   "value": 16135,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2436,
+   "specimen": "Allosaurus",
+   "id": 137
+  },
+  {
+   "id": 138,
+   "specimen": "Spinosaurus",
+   "value": 7537,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6138,
+   "specimen": "Ankylosaurus",
+   "id": 139
+  },
+  {
+   "id": 140,
+   "specimen": "Parasaurolophus",
+   "value": 2639,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "id": 141,
+   "specimen": "Stegosaurus",
+   "value": 5140,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "id": 142,
+   "specimen": "Triceratops",
+   "value": 6141,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8542,
+   "specimen": "Tyrannosaurus",
+   "id": 143
+  },
+  {
+   "id": 144,
+   "specimen": "Velociraptor",
+   "value": 158,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "id": 145,
+   "specimen": "Brachiosaurus",
+   "value": 56144,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": false
+  },
+  {
+   "id": 146,
+   "specimen": "Diplodocus",
+   "value": 16145,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2446,
+   "specimen": "Allosaurus",
+   "id": 147
+  },
+  {
+   "id": 148,
+   "specimen": "Spinosaurus",
+   "value": 7547,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6148,
+   "specimen": "Ankylosaurus",
+   "id": 149
+  },
+  {
+   "verified": true,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 2649,
+   "specimen": "Parasaurolophus",
+   "id": 150
+  },
+  {
+   "id": 151,
+   "specimen": "Stegosaurus",
+   "value": 5150,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.94,
+   "unit": "kg",
+   "value": 6151,
+   "specimen": "Triceratops",
+   "id": 152
+  },
+  {
+   "verified": true,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8552,
+   "specimen": "Tyrannosaurus",
+   "id": 153
+  },
+  {
+   "verified": false,
+   "confidence": 0.9199999999999999,
+   "unit": "kg",
+   "value": 168,
+   "specimen": "Velociraptor",
+   "id": 154
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56154,
+   "specimen": "Brachiosaurus",
+   "id": 155
+  },
+  {
+   "id": 156,
+   "specimen": "Diplodocus",
+   "value": 16155,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "id": 157,
+   "specimen": "Allosaurus",
+   "value": 2456,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": false
+  },
+  {
+   "id": 158,
+   "specimen": "Spinosaurus",
+   "value": 7557,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6158,
+   "specimen": "Ankylosaurus",
+   "id": 159
+  },
+  {
+   "id": 160,
+   "specimen": "Parasaurolophus",
+   "value": 2659,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5160,
+   "specimen": "Stegosaurus",
+   "id": 161
+  },
+  {
+   "id": 162,
+   "specimen": "Triceratops",
+   "value": 6161,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "id": 163,
+   "specimen": "Tyrannosaurus",
+   "value": 8562,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": false
+  },
+  {
+   "id": 164,
+   "specimen": "Velociraptor",
+   "value": 178,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "id": 165,
+   "specimen": "Brachiosaurus",
+   "value": 56164,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": true
+  },
+  {
+   "id": 166,
+   "specimen": "Diplodocus",
+   "value": 16165,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": false
+  },
+  {
+   "id": 167,
+   "specimen": "Allosaurus",
+   "value": 2466,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "id": 168,
+   "specimen": "Spinosaurus",
+   "value": 7567,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6168,
+   "specimen": "Ankylosaurus",
+   "id": 169
+  },
+  {
+   "id": 170,
+   "specimen": "Parasaurolophus",
+   "value": 2669,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5170,
+   "specimen": "Stegosaurus",
+   "id": 171
+  },
+  {
+   "id": 172,
+   "specimen": "Triceratops",
+   "value": 6171,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": false
+  },
+  {
+   "id": 173,
+   "specimen": "Tyrannosaurus",
+   "value": 8572,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": true
+  },
+  {
+   "id": 174,
+   "specimen": "Velociraptor",
+   "value": 188,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56174,
+   "specimen": "Brachiosaurus",
+   "id": 175
+  },
+  {
+   "id": 176,
+   "specimen": "Diplodocus",
+   "value": 16175,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "id": 177,
+   "specimen": "Allosaurus",
+   "value": 2476,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "id": 178,
+   "specimen": "Spinosaurus",
+   "value": 7577,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6178,
+   "specimen": "Ankylosaurus",
+   "id": 179
+  },
+  {
+   "id": 180,
+   "specimen": "Parasaurolophus",
+   "value": 2679,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5180,
+   "specimen": "Stegosaurus",
+   "id": 181
+  },
+  {
+   "verified": true,
+   "confidence": 0.94,
+   "unit": "kg",
+   "value": 6181,
+   "specimen": "Triceratops",
+   "id": 182
+  },
+  {
+   "id": 183,
+   "specimen": "Tyrannosaurus",
+   "value": 8582,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.9199999999999999,
+   "unit": "kg",
+   "value": 198,
+   "specimen": "Velociraptor",
+   "id": 184
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56184,
+   "specimen": "Brachiosaurus",
+   "id": 185
+  },
+  {
+   "verified": true,
+   "confidence": 0.8999999999999999,
+   "unit": "kg",
+   "value": 16185,
+   "specimen": "Diplodocus",
+   "id": 186
+  },
+  {
+   "verified": false,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2486,
+   "specimen": "Allosaurus",
+   "id": 187
+  },
+  {
+   "id": 188,
+   "specimen": "Spinosaurus",
+   "value": 7587,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "id": 189,
+   "specimen": "Ankylosaurus",
+   "value": 6188,
+   "unit": "kg",
+   "confidence": 0.87,
+   "verified": true
+  },
+  {
+   "id": 190,
+   "specimen": "Parasaurolophus",
+   "value": 2689,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5190,
+   "specimen": "Stegosaurus",
+   "id": 191
+  },
+  {
+   "id": 192,
+   "specimen": "Triceratops",
+   "value": 6191,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8592,
+   "specimen": "Tyrannosaurus",
+   "id": 193
+  },
+  {
+   "id": 194,
+   "specimen": "Velociraptor",
+   "value": 208,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56194,
+   "specimen": "Brachiosaurus",
+   "id": 195
+  },
+  {
+   "id": 196,
+   "specimen": "Diplodocus",
+   "value": 16195,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": false
+  },
+  {
+   "id": 197,
+   "specimen": "Allosaurus",
+   "value": 2496,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7597,
+   "specimen": "Spinosaurus",
+   "id": 198
+  },
+  {
+   "verified": false,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6198,
+   "specimen": "Ankylosaurus",
+   "id": 199
+  },
+  {
+   "id": 200,
+   "specimen": "Parasaurolophus",
+   "value": 2699,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5200,
+   "specimen": "Stegosaurus",
+   "id": 201
+  },
+  {
+   "id": 202,
+   "specimen": "Triceratops",
+   "value": 6201,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": false
+  },
+  {
+   "id": 203,
+   "specimen": "Tyrannosaurus",
+   "value": 8602,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.9199999999999999,
+   "unit": "kg",
+   "value": 218,
+   "specimen": "Velociraptor",
+   "id": 204
+  },
+  {
+   "id": 205,
+   "specimen": "Brachiosaurus",
+   "value": 56204,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": false
+  },
+  {
+   "id": 206,
+   "specimen": "Diplodocus",
+   "value": 16205,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "id": 207,
+   "specimen": "Allosaurus",
+   "value": 2506,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7607,
+   "specimen": "Spinosaurus",
+   "id": 208
+  },
+  {
+   "id": 209,
+   "specimen": "Ankylosaurus",
+   "value": 6208,
+   "unit": "kg",
+   "confidence": 0.87,
+   "verified": true
+  },
+  {
+   "id": 210,
+   "specimen": "Parasaurolophus",
+   "value": 2709,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5210,
+   "specimen": "Stegosaurus",
+   "id": 211
+  },
+  {
+   "id": 212,
+   "specimen": "Triceratops",
+   "value": 6211,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8612,
+   "specimen": "Tyrannosaurus",
+   "id": 213
+  },
+  {
+   "verified": false,
+   "confidence": 0.9199999999999999,
+   "unit": "kg",
+   "value": 228,
+   "specimen": "Velociraptor",
+   "id": 214
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56214,
+   "specimen": "Brachiosaurus",
+   "id": 215
+  },
+  {
+   "verified": true,
+   "confidence": 0.8999999999999999,
+   "unit": "kg",
+   "value": 16215,
+   "specimen": "Diplodocus",
+   "id": 216
+  },
+  {
+   "id": 217,
+   "specimen": "Allosaurus",
+   "value": 2516,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7617,
+   "specimen": "Spinosaurus",
+   "id": 218
+  },
+  {
+   "id": 219,
+   "specimen": "Ankylosaurus",
+   "value": 6218,
+   "unit": "kg",
+   "confidence": 0.87,
+   "verified": true
+  },
+  {
+   "id": 220,
+   "specimen": "Parasaurolophus",
+   "value": 2719,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5220,
+   "specimen": "Stegosaurus",
+   "id": 221
+  },
+  {
+   "verified": true,
+   "confidence": 0.94,
+   "unit": "kg",
+   "value": 6221,
+   "specimen": "Triceratops",
+   "id": 222
+  },
+  {
+   "id": 223,
+   "specimen": "Tyrannosaurus",
+   "value": 8622,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": false
+  },
+  {
+   "id": 224,
+   "specimen": "Velociraptor",
+   "value": 238,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "id": 225,
+   "specimen": "Brachiosaurus",
+   "value": 56224,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.8999999999999999,
+   "unit": "kg",
+   "value": 16225,
+   "specimen": "Diplodocus",
+   "id": 226
+  },
+  {
+   "id": 227,
+   "specimen": "Allosaurus",
+   "value": 2526,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7627,
+   "specimen": "Spinosaurus",
+   "id": 228
+  },
+  {
+   "verified": false,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6228,
+   "specimen": "Ankylosaurus",
+   "id": 229
+  },
+  {
+   "verified": true,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 2729,
+   "specimen": "Parasaurolophus",
+   "id": 230
+  },
+  {
+   "id": 231,
+   "specimen": "Stegosaurus",
+   "value": 5230,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "id": 232,
+   "specimen": "Triceratops",
+   "value": 6231,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": false
+  },
+  {
+   "id": 233,
+   "specimen": "Tyrannosaurus",
+   "value": 8632,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.9199999999999999,
+   "unit": "kg",
+   "value": 248,
+   "specimen": "Velociraptor",
+   "id": 234
+  },
+  {
+   "id": 235,
+   "specimen": "Brachiosaurus",
+   "value": 56234,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": false
+  },
+  {
+   "id": 236,
+   "specimen": "Diplodocus",
+   "value": 16235,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2536,
+   "specimen": "Allosaurus",
+   "id": 237
+  },
+  {
+   "verified": false,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7637,
+   "specimen": "Spinosaurus",
+   "id": 238
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6238,
+   "specimen": "Ankylosaurus",
+   "id": 239
+  },
+  {
+   "verified": true,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 2739,
+   "specimen": "Parasaurolophus",
+   "id": 240
+  },
+  {
+   "id": 241,
+   "specimen": "Stegosaurus",
+   "value": 5240,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": false
+  },
+  {
+   "id": 242,
+   "specimen": "Triceratops",
+   "value": 6241,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8642,
+   "specimen": "Tyrannosaurus",
+   "id": 243
+  },
+  {
+   "id": 244,
+   "specimen": "Velociraptor",
+   "value": 258,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56244,
+   "specimen": "Brachiosaurus",
+   "id": 245
+  },
+  {
+   "verified": true,
+   "confidence": 0.8999999999999999,
+   "unit": "kg",
+   "value": 16245,
+   "specimen": "Diplodocus",
+   "id": 246
+  },
+  {
+   "verified": false,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2546,
+   "specimen": "Allosaurus",
+   "id": 247
+  },
+  {
+   "verified": true,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7647,
+   "specimen": "Spinosaurus",
+   "id": 248
+  },
+  {
+   "id": 249,
+   "specimen": "Ankylosaurus",
+   "value": 6248,
+   "unit": "kg",
+   "confidence": 0.87,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 2749,
+   "specimen": "Parasaurolophus",
+   "id": 250
+  },
+  {
+   "id": 251,
+   "specimen": "Stegosaurus",
+   "value": 5250,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.94,
+   "unit": "kg",
+   "value": 6251,
+   "specimen": "Triceratops",
+   "id": 252
+  },
+  {
+   "id": 253,
+   "specimen": "Tyrannosaurus",
+   "value": 8652,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.9199999999999999,
+   "unit": "kg",
+   "value": 268,
+   "specimen": "Velociraptor",
+   "id": 254
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56254,
+   "specimen": "Brachiosaurus",
+   "id": 255
+  },
+  {
+   "id": 256,
+   "specimen": "Diplodocus",
+   "value": 16255,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": false
+  },
+  {
+   "id": 257,
+   "specimen": "Allosaurus",
+   "value": 2556,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7657,
+   "specimen": "Spinosaurus",
+   "id": 258
+  },
+  {
+   "id": 259,
+   "specimen": "Ankylosaurus",
+   "value": 6258,
+   "unit": "kg",
+   "confidence": 0.87,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 2759,
+   "specimen": "Parasaurolophus",
+   "id": 260
+  },
+  {
+   "verified": true,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5260,
+   "specimen": "Stegosaurus",
+   "id": 261
+  },
+  {
+   "verified": false,
+   "confidence": 0.94,
+   "unit": "kg",
+   "value": 6261,
+   "specimen": "Triceratops",
+   "id": 262
+  },
+  {
+   "id": 263,
+   "specimen": "Tyrannosaurus",
+   "value": 8662,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": true
+  },
+  {
+   "id": 264,
+   "specimen": "Velociraptor",
+   "value": 278,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "id": 265,
+   "specimen": "Brachiosaurus",
+   "value": 56264,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.8999999999999999,
+   "unit": "kg",
+   "value": 16265,
+   "specimen": "Diplodocus",
+   "id": 266
+  },
+  {
+   "id": 267,
+   "specimen": "Allosaurus",
+   "value": 2566,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "id": 268,
+   "specimen": "Spinosaurus",
+   "value": 7667,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": false
+  },
+  {
+   "id": 269,
+   "specimen": "Ankylosaurus",
+   "value": 6268,
+   "unit": "kg",
+   "confidence": 0.87,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 2769,
+   "specimen": "Parasaurolophus",
+   "id": 270
+  },
+  {
+   "id": 271,
+   "specimen": "Stegosaurus",
+   "value": 5270,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.94,
+   "unit": "kg",
+   "value": 6271,
+   "specimen": "Triceratops",
+   "id": 272
+  },
+  {
+   "id": 273,
+   "specimen": "Tyrannosaurus",
+   "value": 8672,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": true
+  },
+  {
+   "id": 274,
+   "specimen": "Velociraptor",
+   "value": 288,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56274,
+   "specimen": "Brachiosaurus",
+   "id": 275
+  },
+  {
+   "id": 276,
+   "specimen": "Diplodocus",
+   "value": 16275,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2576,
+   "specimen": "Allosaurus",
+   "id": 277
+  },
+  {
+   "verified": true,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7677,
+   "specimen": "Spinosaurus",
+   "id": 278
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6278,
+   "specimen": "Ankylosaurus",
+   "id": 279
+  },
+  {
+   "verified": false,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 2779,
+   "specimen": "Parasaurolophus",
+   "id": 280
+  },
+  {
+   "id": 281,
+   "specimen": "Stegosaurus",
+   "value": 5280,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.94,
+   "unit": "kg",
+   "value": 6281,
+   "specimen": "Triceratops",
+   "id": 282
+  },
+  {
+   "id": 283,
+   "specimen": "Tyrannosaurus",
+   "value": 8682,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.9199999999999999,
+   "unit": "kg",
+   "value": 298,
+   "specimen": "Velociraptor",
+   "id": 284
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56284,
+   "specimen": "Brachiosaurus",
+   "id": 285
+  },
+  {
+   "verified": false,
+   "confidence": 0.8999999999999999,
+   "unit": "kg",
+   "value": 16285,
+   "specimen": "Diplodocus",
+   "id": 286
+  },
+  {
+   "id": 287,
+   "specimen": "Allosaurus",
+   "value": 2586,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "id": 288,
+   "specimen": "Spinosaurus",
+   "value": 7687,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "id": 289,
+   "specimen": "Ankylosaurus",
+   "value": 6288,
+   "unit": "kg",
+   "confidence": 0.87,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 2789,
+   "specimen": "Parasaurolophus",
+   "id": 290
+  },
+  {
+   "id": 291,
+   "specimen": "Stegosaurus",
+   "value": 5290,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.94,
+   "unit": "kg",
+   "value": 6291,
+   "specimen": "Triceratops",
+   "id": 292
+  },
+  {
+   "id": 293,
+   "specimen": "Tyrannosaurus",
+   "value": 8692,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": true
+  },
+  {
+   "id": 294,
+   "specimen": "Velociraptor",
+   "value": 308,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "id": 295,
+   "specimen": "Brachiosaurus",
+   "value": 56294,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": false
+  },
+  {
+   "id": 296,
+   "specimen": "Diplodocus",
+   "value": 16295,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "id": 297,
+   "specimen": "Allosaurus",
+   "value": 2596,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "id": 298,
+   "specimen": "Spinosaurus",
+   "value": 7697,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6298,
+   "specimen": "Ankylosaurus",
+   "id": 299
+  },
+  {
+   "id": 300,
+   "specimen": "Parasaurolophus",
+   "value": 2799,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5300,
+   "specimen": "Stegosaurus",
+   "id": 301
+  },
+  {
+   "verified": true,
+   "confidence": 0.94,
+   "unit": "kg",
+   "value": 6301,
+   "specimen": "Triceratops",
+   "id": 302
+  },
+  {
+   "verified": true,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8702,
+   "specimen": "Tyrannosaurus",
+   "id": 303
+  },
+  {
+   "verified": false,
+   "confidence": 0.9199999999999999,
+   "unit": "kg",
+   "value": 318,
+   "specimen": "Velociraptor",
+   "id": 304
+  },
+  {
+   "id": 305,
+   "specimen": "Brachiosaurus",
+   "value": 56304,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.8999999999999999,
+   "unit": "kg",
+   "value": 16305,
+   "specimen": "Diplodocus",
+   "id": 306
+  },
+  {
+   "id": 307,
+   "specimen": "Allosaurus",
+   "value": 2606,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": false
+  },
+  {
+   "id": 308,
+   "specimen": "Spinosaurus",
+   "value": 7707,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6308,
+   "specimen": "Ankylosaurus",
+   "id": 309
+  },
+  {
+   "verified": false,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 2809,
+   "specimen": "Parasaurolophus",
+   "id": 310
+  },
+  {
+   "id": 311,
+   "specimen": "Stegosaurus",
+   "value": 5310,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "id": 312,
+   "specimen": "Triceratops",
+   "value": 6311,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "id": 313,
+   "specimen": "Tyrannosaurus",
+   "value": 8712,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.9199999999999999,
+   "unit": "kg",
+   "value": 328,
+   "specimen": "Velociraptor",
+   "id": 314
+  },
+  {
+   "id": 315,
+   "specimen": "Brachiosaurus",
+   "value": 56314,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.8999999999999999,
+   "unit": "kg",
+   "value": 16315,
+   "specimen": "Diplodocus",
+   "id": 316
+  },
+  {
+   "verified": true,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2616,
+   "specimen": "Allosaurus",
+   "id": 317
+  },
+  {
+   "verified": true,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7717,
+   "specimen": "Spinosaurus",
+   "id": 318
+  },
+  {
+   "id": 319,
+   "specimen": "Ankylosaurus",
+   "value": 6318,
+   "unit": "kg",
+   "confidence": 0.87,
+   "verified": false
+  },
+  {
+   "id": 320,
+   "specimen": "Parasaurolophus",
+   "value": 2819,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "id": 321,
+   "specimen": "Stegosaurus",
+   "value": 5320,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.94,
+   "unit": "kg",
+   "value": 6321,
+   "specimen": "Triceratops",
+   "id": 322
+  },
+  {
+   "id": 323,
+   "specimen": "Tyrannosaurus",
+   "value": 8722,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": true
+  },
+  {
+   "id": 324,
+   "specimen": "Velociraptor",
+   "value": 338,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56324,
+   "specimen": "Brachiosaurus",
+   "id": 325
+  },
+  {
+   "id": 326,
+   "specimen": "Diplodocus",
+   "value": 16325,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "id": 327,
+   "specimen": "Allosaurus",
+   "value": 2626,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7727,
+   "specimen": "Spinosaurus",
+   "id": 328
+  },
+  {
+   "id": 329,
+   "specimen": "Ankylosaurus",
+   "value": 6328,
+   "unit": "kg",
+   "confidence": 0.87,
+   "verified": true
+  },
+  {
+   "id": 330,
+   "specimen": "Parasaurolophus",
+   "value": 2829,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5330,
+   "specimen": "Stegosaurus",
+   "id": 331
+  },
+  {
+   "id": 332,
+   "specimen": "Triceratops",
+   "value": 6331,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8732,
+   "specimen": "Tyrannosaurus",
+   "id": 333
+  },
+  {
+   "verified": false,
+   "confidence": 0.9199999999999999,
+   "unit": "kg",
+   "value": 348,
+   "specimen": "Velociraptor",
+   "id": 334
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56334,
+   "specimen": "Brachiosaurus",
+   "id": 335
+  },
+  {
+   "verified": true,
+   "confidence": 0.8999999999999999,
+   "unit": "kg",
+   "value": 16335,
+   "specimen": "Diplodocus",
+   "id": 336
+  },
+  {
+   "id": 337,
+   "specimen": "Allosaurus",
+   "value": 2636,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7737,
+   "specimen": "Spinosaurus",
+   "id": 338
+  },
+  {
+   "id": 339,
+   "specimen": "Ankylosaurus",
+   "value": 6338,
+   "unit": "kg",
+   "confidence": 0.87,
+   "verified": true
+  },
+  {
+   "id": 340,
+   "specimen": "Parasaurolophus",
+   "value": 2839,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5340,
+   "specimen": "Stegosaurus",
+   "id": 341
+  },
+  {
+   "verified": true,
+   "confidence": 0.94,
+   "unit": "kg",
+   "value": 6341,
+   "specimen": "Triceratops",
+   "id": 342
+  },
+  {
+   "verified": false,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8742,
+   "specimen": "Tyrannosaurus",
+   "id": 343
+  },
+  {
+   "id": 344,
+   "specimen": "Velociraptor",
+   "value": 358,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "id": 345,
+   "specimen": "Brachiosaurus",
+   "value": 56344,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.8999999999999999,
+   "unit": "kg",
+   "value": 16345,
+   "specimen": "Diplodocus",
+   "id": 346
+  },
+  {
+   "id": 347,
+   "specimen": "Allosaurus",
+   "value": 2646,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7747,
+   "specimen": "Spinosaurus",
+   "id": 348
+  },
+  {
+   "verified": false,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6348,
+   "specimen": "Ankylosaurus",
+   "id": 349
+  },
+  {
+   "verified": true,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 2849,
+   "specimen": "Parasaurolophus",
+   "id": 350
+  },
+  {
+   "id": 351,
+   "specimen": "Stegosaurus",
+   "value": 5350,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "id": 352,
+   "specimen": "Triceratops",
+   "value": 6351,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": false
+  },
+  {
+   "id": 353,
+   "specimen": "Tyrannosaurus",
+   "value": 8752,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.9199999999999999,
+   "unit": "kg",
+   "value": 368,
+   "specimen": "Velociraptor",
+   "id": 354
+  },
+  {
+   "id": 355,
+   "specimen": "Brachiosaurus",
+   "value": 56354,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.8999999999999999,
+   "unit": "kg",
+   "value": 16355,
+   "specimen": "Diplodocus",
+   "id": 356
+  },
+  {
+   "verified": true,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2656,
+   "specimen": "Allosaurus",
+   "id": 357
+  },
+  {
+   "id": 358,
+   "specimen": "Spinosaurus",
+   "value": 7757,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": false
+  },
+  {
+   "id": 359,
+   "specimen": "Ankylosaurus",
+   "value": 6358,
+   "unit": "kg",
+   "confidence": 0.87,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 2859,
+   "specimen": "Parasaurolophus",
+   "id": 360
+  },
+  {
+   "id": 361,
+   "specimen": "Stegosaurus",
+   "value": 5360,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": false
+  },
+  {
+   "id": 362,
+   "specimen": "Triceratops",
+   "value": 6361,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8762,
+   "specimen": "Tyrannosaurus",
+   "id": 363
+  },
+  {
+   "id": 364,
+   "specimen": "Velociraptor",
+   "value": 378,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56364,
+   "specimen": "Brachiosaurus",
+   "id": 365
+  },
+  {
+   "verified": true,
+   "confidence": 0.8999999999999999,
+   "unit": "kg",
+   "value": 16365,
+   "specimen": "Diplodocus",
+   "id": 366
+  },
+  {
+   "verified": false,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2666,
+   "specimen": "Allosaurus",
+   "id": 367
+  },
+  {
+   "verified": true,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7767,
+   "specimen": "Spinosaurus",
+   "id": 368
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6368,
+   "specimen": "Ankylosaurus",
+   "id": 369
+  },
+  {
+   "verified": false,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 2869,
+   "specimen": "Parasaurolophus",
+   "id": 370
+  },
+  {
+   "verified": true,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5370,
+   "specimen": "Stegosaurus",
+   "id": 371
+  },
+  {
+   "id": 372,
+   "specimen": "Triceratops",
+   "value": 6371,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "id": 373,
+   "specimen": "Tyrannosaurus",
+   "value": 8772,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": false
+  },
+  {
+   "id": 374,
+   "specimen": "Velociraptor",
+   "value": 388,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56374,
+   "specimen": "Brachiosaurus",
+   "id": 375
+  },
+  {
+   "id": 376,
+   "specimen": "Diplodocus",
+   "value": 16375,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2676,
+   "specimen": "Allosaurus",
+   "id": 377
+  },
+  {
+   "id": 378,
+   "specimen": "Spinosaurus",
+   "value": 7777,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6378,
+   "specimen": "Ankylosaurus",
+   "id": 379
+  },
+  {
+   "id": 380,
+   "specimen": "Parasaurolophus",
+   "value": 2879,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "id": 381,
+   "specimen": "Stegosaurus",
+   "value": 5380,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.94,
+   "unit": "kg",
+   "value": 6381,
+   "specimen": "Triceratops",
+   "id": 382
+  },
+  {
+   "verified": true,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8782,
+   "specimen": "Tyrannosaurus",
+   "id": 383
+  },
+  {
+   "id": 384,
+   "specimen": "Velociraptor",
+   "value": 398,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56384,
+   "specimen": "Brachiosaurus",
+   "id": 385
+  },
+  {
+   "id": 386,
+   "specimen": "Diplodocus",
+   "value": 16385,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "id": 387,
+   "specimen": "Allosaurus",
+   "value": 2686,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7787,
+   "specimen": "Spinosaurus",
+   "id": 388
+  },
+  {
+   "id": 389,
+   "specimen": "Ankylosaurus",
+   "value": 6388,
+   "unit": "kg",
+   "confidence": 0.87,
+   "verified": true
+  },
+  {
+   "id": 390,
+   "specimen": "Parasaurolophus",
+   "value": 2889,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5390,
+   "specimen": "Stegosaurus",
+   "id": 391
+  },
+  {
+   "id": 392,
+   "specimen": "Triceratops",
+   "value": 6391,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "id": 393,
+   "specimen": "Tyrannosaurus",
+   "value": 8792,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": true
+  },
+  {
+   "id": 394,
+   "specimen": "Velociraptor",
+   "value": 408,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56394,
+   "specimen": "Brachiosaurus",
+   "id": 395
+  },
+  {
+   "id": 396,
+   "specimen": "Diplodocus",
+   "value": 16395,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2696,
+   "specimen": "Allosaurus",
+   "id": 397
+  },
+  {
+   "verified": true,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7797,
+   "specimen": "Spinosaurus",
+   "id": 398
+  },
+  {
+   "id": 399,
+   "specimen": "Ankylosaurus",
+   "value": 6398,
+   "unit": "kg",
+   "confidence": 0.87,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 2899,
+   "specimen": "Parasaurolophus",
+   "id": 400
+  },
+  {
+   "verified": true,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5400,
+   "specimen": "Stegosaurus",
+   "id": 401
+  },
+  {
+   "verified": true,
+   "confidence": 0.94,
+   "unit": "kg",
+   "value": 6401,
+   "specimen": "Triceratops",
+   "id": 402
+  },
+  {
+   "verified": false,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8802,
+   "specimen": "Tyrannosaurus",
+   "id": 403
+  },
+  {
+   "id": 404,
+   "specimen": "Velociraptor",
+   "value": 418,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "id": 405,
+   "specimen": "Brachiosaurus",
+   "value": 56404,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": true
+  },
+  {
+   "id": 406,
+   "specimen": "Diplodocus",
+   "value": 16405,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2706,
+   "specimen": "Allosaurus",
+   "id": 407
+  },
+  {
+   "id": 408,
+   "specimen": "Spinosaurus",
+   "value": 7807,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6408,
+   "specimen": "Ankylosaurus",
+   "id": 409
+  },
+  {
+   "id": 410,
+   "specimen": "Parasaurolophus",
+   "value": 2909,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "id": 411,
+   "specimen": "Stegosaurus",
+   "value": 5410,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "id": 412,
+   "specimen": "Triceratops",
+   "value": 6411,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": false
+  },
+  {
+   "id": 413,
+   "specimen": "Tyrannosaurus",
+   "value": 8812,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": true
+  },
+  {
+   "id": 414,
+   "specimen": "Velociraptor",
+   "value": 428,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "id": 415,
+   "specimen": "Brachiosaurus",
+   "value": 56414,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": false
+  },
+  {
+   "id": 416,
+   "specimen": "Diplodocus",
+   "value": 16415,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2716,
+   "specimen": "Allosaurus",
+   "id": 417
+  },
+  {
+   "id": 418,
+   "specimen": "Spinosaurus",
+   "value": 7817,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6418,
+   "specimen": "Ankylosaurus",
+   "id": 419
+  },
+  {
+   "id": 420,
+   "specimen": "Parasaurolophus",
+   "value": 2919,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "id": 421,
+   "specimen": "Stegosaurus",
+   "value": 5420,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": false
+  },
+  {
+   "id": 422,
+   "specimen": "Triceratops",
+   "value": 6421,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8822,
+   "specimen": "Tyrannosaurus",
+   "id": 423
+  },
+  {
+   "id": 424,
+   "specimen": "Velociraptor",
+   "value": 438,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": false
+  },
+  {
+   "id": 425,
+   "specimen": "Brachiosaurus",
+   "value": 56424,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": true
+  },
+  {
+   "id": 426,
+   "specimen": "Diplodocus",
+   "value": 16425,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2726,
+   "specimen": "Allosaurus",
+   "id": 427
+  },
+  {
+   "id": 428,
+   "specimen": "Spinosaurus",
+   "value": 7827,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6428,
+   "specimen": "Ankylosaurus",
+   "id": 429
+  },
+  {
+   "verified": false,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 2929,
+   "specimen": "Parasaurolophus",
+   "id": 430
+  },
+  {
+   "id": 431,
+   "specimen": "Stegosaurus",
+   "value": 5430,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.94,
+   "unit": "kg",
+   "value": 6431,
+   "specimen": "Triceratops",
+   "id": 432
+  },
+  {
+   "verified": false,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8832,
+   "specimen": "Tyrannosaurus",
+   "id": 433
+  },
+  {
+   "verified": true,
+   "confidence": 0.9199999999999999,
+   "unit": "kg",
+   "value": 448,
+   "specimen": "Velociraptor",
+   "id": 434
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56434,
+   "specimen": "Brachiosaurus",
+   "id": 435
+  },
+  {
+   "id": 436,
+   "specimen": "Diplodocus",
+   "value": 16435,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": false
+  },
+  {
+   "id": 437,
+   "specimen": "Allosaurus",
+   "value": 2736,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "id": 438,
+   "specimen": "Spinosaurus",
+   "value": 7837,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6438,
+   "specimen": "Ankylosaurus",
+   "id": 439
+  },
+  {
+   "id": 440,
+   "specimen": "Parasaurolophus",
+   "value": 2939,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5440,
+   "specimen": "Stegosaurus",
+   "id": 441
+  },
+  {
+   "id": 442,
+   "specimen": "Triceratops",
+   "value": 6441,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": false
+  },
+  {
+   "id": 443,
+   "specimen": "Tyrannosaurus",
+   "value": 8842,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": true
+  },
+  {
+   "id": 444,
+   "specimen": "Velociraptor",
+   "value": 458,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "id": 445,
+   "specimen": "Brachiosaurus",
+   "value": 56444,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": false
+  },
+  {
+   "id": 446,
+   "specimen": "Diplodocus",
+   "value": 16445,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "id": 447,
+   "specimen": "Allosaurus",
+   "value": 2746,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "id": 448,
+   "specimen": "Spinosaurus",
+   "value": 7847,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6448,
+   "specimen": "Ankylosaurus",
+   "id": 449
+  },
+  {
+   "id": 450,
+   "specimen": "Parasaurolophus",
+   "value": 2949,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5450,
+   "specimen": "Stegosaurus",
+   "id": 451
+  },
+  {
+   "id": 452,
+   "specimen": "Triceratops",
+   "value": 6451,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "id": 453,
+   "specimen": "Tyrannosaurus",
+   "value": 8852,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": true
+  },
+  {
+   "id": 454,
+   "specimen": "Velociraptor",
+   "value": 468,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56454,
+   "specimen": "Brachiosaurus",
+   "id": 455
+  },
+  {
+   "id": 456,
+   "specimen": "Diplodocus",
+   "value": 16455,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2756,
+   "specimen": "Allosaurus",
+   "id": 457
+  },
+  {
+   "verified": true,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7857,
+   "specimen": "Spinosaurus",
+   "id": 458
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6458,
+   "specimen": "Ankylosaurus",
+   "id": 459
+  },
+  {
+   "id": 460,
+   "specimen": "Parasaurolophus",
+   "value": 2959,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": false
+  },
+  {
+   "id": 461,
+   "specimen": "Stegosaurus",
+   "value": 5460,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "id": 462,
+   "specimen": "Triceratops",
+   "value": 6461,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8862,
+   "specimen": "Tyrannosaurus",
+   "id": 463
+  },
+  {
+   "id": 464,
+   "specimen": "Velociraptor",
+   "value": 478,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56464,
+   "specimen": "Brachiosaurus",
+   "id": 465
+  },
+  {
+   "id": 466,
+   "specimen": "Diplodocus",
+   "value": 16465,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": false
+  },
+  {
+   "id": 467,
+   "specimen": "Allosaurus",
+   "value": 2766,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7867,
+   "specimen": "Spinosaurus",
+   "id": 468
+  },
+  {
+   "verified": false,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6468,
+   "specimen": "Ankylosaurus",
+   "id": 469
+  },
+  {
+   "verified": true,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 2969,
+   "specimen": "Parasaurolophus",
+   "id": 470
+  },
+  {
+   "id": 471,
+   "specimen": "Stegosaurus",
+   "value": 5470,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "id": 472,
+   "specimen": "Triceratops",
+   "value": 6471,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8872,
+   "specimen": "Tyrannosaurus",
+   "id": 473
+  },
+  {
+   "id": 474,
+   "specimen": "Velociraptor",
+   "value": 488,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56474,
+   "specimen": "Brachiosaurus",
+   "id": 475
+  },
+  {
+   "id": 476,
+   "specimen": "Diplodocus",
+   "value": 16475,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "id": 477,
+   "specimen": "Allosaurus",
+   "value": 2776,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7877,
+   "specimen": "Spinosaurus",
+   "id": 478
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6478,
+   "specimen": "Ankylosaurus",
+   "id": 479
+  },
+  {
+   "verified": true,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 2979,
+   "specimen": "Parasaurolophus",
+   "id": 480
+  },
+  {
+   "verified": false,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5480,
+   "specimen": "Stegosaurus",
+   "id": 481
+  },
+  {
+   "verified": true,
+   "confidence": 0.94,
+   "unit": "kg",
+   "value": 6481,
+   "specimen": "Triceratops",
+   "id": 482
+  },
+  {
+   "verified": true,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8882,
+   "specimen": "Tyrannosaurus",
+   "id": 483
+  },
+  {
+   "id": 484,
+   "specimen": "Velociraptor",
+   "value": 498,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": false
+  },
+  {
+   "id": 485,
+   "specimen": "Brachiosaurus",
+   "value": 56484,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": true
+  },
+  {
+   "id": 486,
+   "specimen": "Diplodocus",
+   "value": 16485,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2786,
+   "specimen": "Allosaurus",
+   "id": 487
+  },
+  {
+   "id": 488,
+   "specimen": "Spinosaurus",
+   "value": 7887,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6488,
+   "specimen": "Ankylosaurus",
+   "id": 489
+  },
+  {
+   "id": 490,
+   "specimen": "Parasaurolophus",
+   "value": 2989,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": false
+  },
+  {
+   "id": 491,
+   "specimen": "Stegosaurus",
+   "value": 5490,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "id": 492,
+   "specimen": "Triceratops",
+   "value": 6491,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "id": 493,
+   "specimen": "Tyrannosaurus",
+   "value": 8892,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": false
+  },
+  {
+   "id": 494,
+   "specimen": "Velociraptor",
+   "value": 508,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "id": 495,
+   "specimen": "Brachiosaurus",
+   "value": 56494,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": true
+  },
+  {
+   "id": 496,
+   "specimen": "Diplodocus",
+   "value": 16495,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2796,
+   "specimen": "Allosaurus",
+   "id": 497
+  },
+  {
+   "id": 498,
+   "specimen": "Spinosaurus",
+   "value": 7897,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6498,
+   "specimen": "Ankylosaurus",
+   "id": 499
+  },
+  {
+   "id": 500,
+   "specimen": "Parasaurolophus",
+   "value": 2999,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "id": 501,
+   "specimen": "Stegosaurus",
+   "value": 5500,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": true
+  },
+  {
+   "id": 502,
+   "specimen": "Triceratops",
+   "value": 6501,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8902,
+   "specimen": "Tyrannosaurus",
+   "id": 503
+  },
+  {
+   "id": 504,
+   "specimen": "Velociraptor",
+   "value": 518,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "id": 505,
+   "specimen": "Brachiosaurus",
+   "value": 56504,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": false
+  },
+  {
+   "id": 506,
+   "specimen": "Diplodocus",
+   "value": 16505,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2806,
+   "specimen": "Allosaurus",
+   "id": 507
+  },
+  {
+   "id": 508,
+   "specimen": "Spinosaurus",
+   "value": 7907,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6508,
+   "specimen": "Ankylosaurus",
+   "id": 509
+  },
+  {
+   "verified": true,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 3009,
+   "specimen": "Parasaurolophus",
+   "id": 510
+  },
+  {
+   "id": 511,
+   "specimen": "Stegosaurus",
+   "value": 5510,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.94,
+   "unit": "kg",
+   "value": 6511,
+   "specimen": "Triceratops",
+   "id": 512
+  },
+  {
+   "verified": true,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8912,
+   "specimen": "Tyrannosaurus",
+   "id": 513
+  },
+  {
+   "verified": false,
+   "confidence": 0.9199999999999999,
+   "unit": "kg",
+   "value": 528,
+   "specimen": "Velociraptor",
+   "id": 514
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56514,
+   "specimen": "Brachiosaurus",
+   "id": 515
+  },
+  {
+   "id": 516,
+   "specimen": "Diplodocus",
+   "value": 16515,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "id": 517,
+   "specimen": "Allosaurus",
+   "value": 2816,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": false
+  },
+  {
+   "id": 518,
+   "specimen": "Spinosaurus",
+   "value": 7917,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6518,
+   "specimen": "Ankylosaurus",
+   "id": 519
+  },
+  {
+   "id": 520,
+   "specimen": "Parasaurolophus",
+   "value": 3019,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5520,
+   "specimen": "Stegosaurus",
+   "id": 521
+  },
+  {
+   "id": 522,
+   "specimen": "Triceratops",
+   "value": 6521,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "id": 523,
+   "specimen": "Tyrannosaurus",
+   "value": 8922,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": false
+  },
+  {
+   "id": 524,
+   "specimen": "Velociraptor",
+   "value": 538,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "id": 525,
+   "specimen": "Brachiosaurus",
+   "value": 56524,
+   "unit": "kg",
+   "confidence": 0.9099999999999999,
+   "verified": true
+  },
+  {
+   "id": 526,
+   "specimen": "Diplodocus",
+   "value": 16525,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": false
+  },
+  {
+   "id": 527,
+   "specimen": "Allosaurus",
+   "value": 2826,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "id": 528,
+   "specimen": "Spinosaurus",
+   "value": 7927,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6528,
+   "specimen": "Ankylosaurus",
+   "id": 529
+  },
+  {
+   "id": 530,
+   "specimen": "Parasaurolophus",
+   "value": 3029,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5530,
+   "specimen": "Stegosaurus",
+   "id": 531
+  },
+  {
+   "id": 532,
+   "specimen": "Triceratops",
+   "value": 6531,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": false
+  },
+  {
+   "id": 533,
+   "specimen": "Tyrannosaurus",
+   "value": 8932,
+   "unit": "kg",
+   "confidence": 0.9299999999999999,
+   "verified": true
+  },
+  {
+   "id": 534,
+   "specimen": "Velociraptor",
+   "value": 548,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56534,
+   "specimen": "Brachiosaurus",
+   "id": 535
+  },
+  {
+   "id": 536,
+   "specimen": "Diplodocus",
+   "value": 16535,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.8899999999999999,
+   "unit": "kg",
+   "value": 2836,
+   "specimen": "Allosaurus",
+   "id": 537
+  },
+  {
+   "verified": false,
+   "confidence": 0.8799999999999999,
+   "unit": "kg",
+   "value": 7937,
+   "specimen": "Spinosaurus",
+   "id": 538
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6538,
+   "specimen": "Ankylosaurus",
+   "id": 539
+  },
+  {
+   "id": 540,
+   "specimen": "Parasaurolophus",
+   "value": 3039,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": true
+  },
+  {
+   "id": 541,
+   "specimen": "Stegosaurus",
+   "value": 5540,
+   "unit": "kg",
+   "confidence": 0.95,
+   "verified": false
+  },
+  {
+   "id": 542,
+   "specimen": "Triceratops",
+   "value": 6541,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8942,
+   "specimen": "Tyrannosaurus",
+   "id": 543
+  },
+  {
+   "id": 544,
+   "specimen": "Velociraptor",
+   "value": 558,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56544,
+   "specimen": "Brachiosaurus",
+   "id": 545
+  },
+  {
+   "id": 546,
+   "specimen": "Diplodocus",
+   "value": 16545,
+   "unit": "kg",
+   "confidence": 0.8999999999999999,
+   "verified": true
+  },
+  {
+   "id": 547,
+   "specimen": "Allosaurus",
+   "value": 2846,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": false
+  },
+  {
+   "id": 548,
+   "specimen": "Spinosaurus",
+   "value": 7947,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.87,
+   "unit": "kg",
+   "value": 6548,
+   "specimen": "Ankylosaurus",
+   "id": 549
+  },
+  {
+   "id": 550,
+   "specimen": "Parasaurolophus",
+   "value": 3049,
+   "unit": "kg",
+   "confidence": 0.86,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.95,
+   "unit": "kg",
+   "value": 5550,
+   "specimen": "Stegosaurus",
+   "id": 551
+  },
+  {
+   "id": 552,
+   "specimen": "Triceratops",
+   "value": 6551,
+   "unit": "kg",
+   "confidence": 0.94,
+   "verified": true
+  },
+  {
+   "verified": false,
+   "confidence": 0.9299999999999999,
+   "unit": "kg",
+   "value": 8952,
+   "specimen": "Tyrannosaurus",
+   "id": 553
+  },
+  {
+   "id": 554,
+   "specimen": "Velociraptor",
+   "value": 568,
+   "unit": "kg",
+   "confidence": 0.9199999999999999,
+   "verified": true
+  },
+  {
+   "verified": true,
+   "confidence": 0.9099999999999999,
+   "unit": "kg",
+   "value": 56554,
+   "specimen": "Brachiosaurus",
+   "id": 555
+  },
+  {
+   "verified": false,
+   "confidence": 0.8999999999999999,
+   "unit": "kg",
+   "value": 16555,
+   "specimen": "Diplodocus",
+   "id": 556
+  },
+  {
+   "id": 557,
+   "specimen": "Allosaurus",
+   "value": 2856,
+   "unit": "kg",
+   "confidence": 0.8899999999999999,
+   "verified": true
+  },
+  {
+   "id": 558,
+   "specimen": "Spinosaurus",
+   "value": 7957,
+   "unit": "kg",
+   "confidence": 0.8799999999999999,
+   "verified": true
+  },
+  {
+   "id": 559,
+   "specimen": "Ankylosaurus",
+   "value": 6558,
+   "unit": "kg",
+   "confidence": 0.87,
+   "verified": false
+  },
+  {
+   "verified": true,
+   "confidence": 0.86,
+   "unit": "kg",
+   "value": 3059,
+   "specimen": "Parasaurolophus",
+   "id": 560
+  }
+ ]
+}

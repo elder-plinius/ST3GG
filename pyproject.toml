@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stegosaurus-wrecks"
+version = "3.0.0"
+description = "🦕 Ultimate Steganography Suite - Encode, Decode, Inject"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.9"
+authors = [
+    {name = "STEGOSAURUS WRECKS"}
+]
+keywords = ["steganography", "lsb", "image", "encoding", "security", "cli", "tui"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Multimedia :: Graphics",
+]
+
+dependencies = [
+    "Pillow>=10.0.0",
+    "numpy>=1.24.0",
+    "typer[all]>=0.9.0",
+    "rich>=13.0.0",
+    "textual>=0.40.0",
+    "nicegui>=1.4.0",
+]
+
+[project.optional-dependencies]
+web-legacy = ["streamlit>=1.28.0"]
+crypto = ["cryptography>=41.0.0"]
+all = [
+    "streamlit>=1.28.0",
+    "cryptography>=41.0.0",
+]
+
+[project.scripts]
+steg = "cli:main_cli"
+steg-tui = "tui:main"
+steg-web = "webui:main"
+steg-web-legacy = "app:main"
+
+[project.urls]
+Homepage = "https://github.com/LYS10S/ST3GG"
+Repository = "https://github.com/LYS10S/ST3GG"
+
+[tool.setuptools.packages.find]
+where = ["."]

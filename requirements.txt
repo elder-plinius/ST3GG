@@ -1,0 +1,17 @@
+# Core
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# CLI & TUI
+typer[all]>=0.9.0
+rich>=13.0.0
+textual>=0.40.0
+
+# Web UI (NiceGUI - modern alternative to Streamlit)
+nicegui>=1.4.0
+
+# Legacy Web UI (Streamlit)
+streamlit>=1.28.0
+
+# Optional - for AES encryption (falls back to XOR if not installed)
+cryptography>=41.0.0

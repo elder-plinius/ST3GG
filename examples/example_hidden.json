@@ -1,0 +1,34 @@
+{
+  "title": "Steganography Example Dataset",
+  "version": "3.0",
+  "generator": "STEGOSAURUS WRECKS",
+  "specimens": [
+    {
+      "name": "Stegosaurus stenops",
+      "period": "Late Jurassic",
+      "mya": [
+        155,
+        150
+      ],
+      "diet": "herbivore",
+      "mass_kg": 5000
+    },
+    {
+      "name": "Stegosaurus ungulatus",
+      "period": "Late Jurassic",
+      "mya": [
+        155,
+        145
+      ],
+      "diet": "herbivore",
+      "mass_kg": 5500
+    }
+  ],
+  "_metadata": {
+    "comment": "Standard paleontology dataset",
+    "encoding": "UTF-8",
+    "payload_b64": "4oqw4oCiLeKAouKcp+KAoi3igKIt4qaRL0xcTy9WXEUvXFAvTFxJL05cWS/ippIt4oCiLeKAouKcp+KAoi3igKLiirE=",
+    "payload_hex": "e28ab0e280a22de280a2e29ca7e280a22de280a22de2a6912f4c5c4f2f565c452f5c502f4c5c492f4e5c592fe2a6922de280a22de280a2e29ca7e280a22de280a2e28ab1",
+    "payload_direct": "⊰•-•✧•-•-⦑/L\\O/V\\E/\\P/L\\I/N\\Y/⦒-•-•✧•-•⊱"
+  }
+}

@@ -1,0 +1,29 @@
+How to Identify Steganography        
+==============================   		  	
+ 	 	 			
+Steganography is the practice of hiding secret information within 		 	   
+ordinary, non-secret data or physical objects. Unlike cryptography, 		 	  	
+which makes data unreadable, steganography conceals the very 			 	  
+existence of the secret message. 		  	 	
+ 			  		
+Common techniques include: 			    
+- Least Significant Bit (LSB) embedding in images 		    	
+- Hiding data in audio frequency spectrums 		   		
+- Using invisible Unicode characters in text 		  	 	
+- Appending data after file end markers  	     
+- Encoding in metadata fields 		 	   
+ 		 	  	
+Detection methods include statistical analysis, visual inspection 		  	  
+of bit planes, frequency domain analysis, and file structure 		  	 	
+examination. Tools like ST3GG can automate this process. 			  		
+  	     
+The word steganography comes from the Greek words 'steganos' 			  		
+(meaning covered or hidden) and 'graphein' (meaning to write). 		  	 	
+ 		   		
+In the digital age, steganography has found applications in 			  	 
+digital watermarking, covert communication, and CTF challenges. 		  	 	
+ 			 	  
+Always remember: just because you can't see it doesn't mean 			  		
+it's not there. Hidden in plain sight is the ultimate disguise.  	    	
+
+End of document.

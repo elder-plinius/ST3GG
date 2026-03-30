@@ -1,0 +1,19 @@
+Dinosaur Mood Tracker 🦕
+========================
+
+Today's paleontology status indicators:
+
+🌑⭐🔴🔵🟢⚫⚪🔶🌑🌟🔴🔵🟢🖤⚪🔶🌚🌟🟥🔵🟢⚫🤍🔶🌚⭐🔴🔵🟩⚫🤍🔶🌚⭐🟥🟦🟢⚫⚪🔶🌚🌟🟥🔵🟢⚫🤍🔶🌚⭐🔴🔵🟢⚫⚪🔶🌚⭐🟥🔵🟢⚫🤍🔶🌑⭐🟥🔵🟩🖤⚪🟧🌚🌟🟥🔵🟢⚫🤍🔶🌚⭐🔴🔵🟢⚫⚪🔶🌚⭐🟥🔵🟢⚫🤍🔶🌚🌟🟥🔵🟢⚫🤍🔶🌚⭐🔴🟦🟩🖤⚪🔶🌚⭐🟥🔵🟢🖤🤍🟧🌚🌟🟥🔵🟢⚫🤍🔶🌚⭐🔴🔵🟢⚫⚪🔶🌚⭐🟥🔵🟢⚫🤍🔶🌑⭐🟥🔵🟩🖤⚪🟧🌚🌟🟥🔵🟢⚫🤍🔶🌚⭐🔴🔵🟢⚫⚪🔶🌚⭐🟥🔵🟢⚫🤍🔶🌑⭐🟥🔵🟩🖤⚪🟧🌚🌟🟥🔵🟢⚫🤍🔶🌚⭐🟥🔵🟢🖤🤍🔶🌚⭐🔴🟦🟢⚫⚪🟧🌑⭐🟥🔵🟩🖤🤍🟧🌑🌟🔴🔵🟩🖤⚪🔶🌑🌟🔴🟦🟩🖤⚪🔶🌑🌟🔴🔵🟩🖤🤍🟧🌑⭐🟥🔵🟩🖤🤍🟧🌑🌟🔴🟦🟢🖤🤍🔶🌑🌟🔴🟦🟩🖤⚪🔶🌑🌟🔴🔵🟢🖤⚪🟧🌑⭐🟥🔵🟩🖤🤍🟧🌑🌟🔴🟦🟩🖤⚪🔶🌑🌟🔴🟦🟢⚫⚪🔶🌑⭐🟥🔵🟩🖤🤍🟧🌑🌟🔴🔵🟩🖤⚪🔶🌑🌟🔴🟦🟩🖤⚪🔶🌑🌟🔴🔵🟩⚫⚪🟧🌑⭐🟥🔵🟩🖤🤍🟧🌑🌟🔴🔵🟩🖤🤍🔶🌑🌟🔴🟦🟩🖤⚪🔶🌑🌟🔴🟦🟩⚫⚪🟧🌑⭐🟥🔵🟩🖤🤍🟧🌚🌟🟥🔵🟢⚫🤍🔶🌚⭐🟥🔵🟢🖤🤍🔶🌚⭐🔴🟦🟢⚫🤍🔶🌑⭐🟥🔵🟩🖤⚪🟧🌚🌟🟥🔵🟢⚫🤍🔶🌚⭐🔴🔵🟢⚫⚪🔶🌚⭐🟥🔵🟢⚫🤍🔶🌑⭐🟥🔵🟩🖤⚪🟧🌚🌟🟥🔵🟢⚫🤍🔶🌚⭐🔴🔵🟢⚫⚪🔶🌚⭐🟥🔵🟢⚫🤍🔶🌚🌟🟥🔵🟢⚫🤍🔶🌚⭐🔴🟦🟩🖤⚪🔶🌚⭐🟥🔵🟢🖤🤍🟧🌚🌟🟥🔵🟢⚫🤍🔶🌚⭐🔴🔵🟢⚫⚪🔶🌚⭐🟥🔵🟢⚫🤍🔶🌑⭐🟥🔵🟩🖤⚪🟧🌚🌟🟥🔵🟢⚫🤍🔶🌚⭐🔴🔵🟢⚫⚪🔶🌚⭐🟥🔵🟢⚫🤍🔶🌚🌟🟥🔵🟢⚫🤍🔶🌚⭐🔴🔵🟩⚫🤍🔶🌚⭐🟥🟦🟢⚫⚪🟧
+
+Legend:
+🌑🌚 = Moon phases (new moon / moon face)
+⭐🌟 = Star brightness (solid / sparkling)
+🔴🟥 = Alert levels (circle / square)
+🔵🟦 = Status indicators (circle / square)
+🟢🟩 = Progress markers (circle / square)
+⚫🖤 = Fossil darkness (circle / heart)
+⚪🤍 = Bone whiteness (circle / heart)
+🔶🟧 = Amber indicators (diamond / square)
+
+Each emoji represents a data point in our specimen tracking system.
+The pattern above encodes today's field survey results.
