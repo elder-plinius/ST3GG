@@ -225,7 +225,7 @@ Everything runs 100% client-side. No data ever leaves your machine.
 
 ```bash
 # Clone
-git clone https://github.com/LYS10S/ST3GG.git
+git clone https://github.com/elder-plinius/ST3GG.git
 cd ST3GG
 
 # Install
