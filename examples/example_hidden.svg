@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ⊰•-•✧•-•-⦑/L\O/V\E/\P/L\I/N\Y/⦒-•-•✧•-•⊱ -->
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"
+     data-steg="4oqw4oCiLeKAouKcp+KAoi3igKIt4qaRL0xcTy9WXEUvXFAvTFxJL05cWS/ippIt4oCiLeKAouKcp+KAoi3igKLiirE="
+     data-desc="Nothing suspicious here">
+  <!-- Hidden in plain sight: steganography demonstration file -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a0e8f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c471ed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="fg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#12c2e9;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#f64f59;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#bg)"/>
+  <circle cx="100" cy="80" r="50" fill="url(#fg)" opacity="0.7"/>
+  <polygon points="60,140 100,90 140,140" fill="#f5af19" opacity="0.6"/>
+  <text x="100" y="175" font-family="monospace" font-size="11"
+        fill="white" text-anchor="middle" opacity="0.8">ST3GG Example</text>
+  <!-- hex:e28ab0e280a22de280a2e29ca7e280a22de280a22de2a6912f4c5c4f2f565c452f5c502f4c5c492f4e5c592fe2a6922de280a22de280a2e29ca7e280a22de280a2e28ab1 -->
+  <metadata>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+             xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <rdf:Description>
+        <dc:description>⊰•-•✧•-•-⦑/L\O/V\E/\P/L\I/N\Y/⦒-•-•✧•-•⊱</dc:description>
+        <dc:creator>STEGOSAURUS WRECKS</dc:creator>
+      </rdf:Description>
+    </rdf:RDF>
+  </metadata>
+</svg>

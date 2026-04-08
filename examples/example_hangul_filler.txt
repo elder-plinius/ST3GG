@@ -1,0 +1,23 @@
+Korean Language Reference Guide
+================================
+
+Hangul, the Korean writing system, was createdㅤin 1443 by
+King Sejongㅤthe Great. Itㅤisㅤconsideredㅤone of the most
+scientificㅤwriting systemsㅤever devised.
+
+The system usesㅤ14 basicㅤconsonants andㅤ10 basicㅤvowels,
+whichㅤcombine into syllabic blocks. Eachㅤblockㅤrepresents
+oneㅤsyllable of Korean.
+
+Consonants: gㅤn dㅤr m b s j ch k tㅤp h
+Vowels:ㅤa ya eo yeoㅤo yo u yuㅤeu i
+
+ModernㅤKoreanㅤuses Hangulㅤalmostㅤexclusively,ㅤthoughㅤsome
+Chinese characters (Hanja) stillㅤappear inㅤformal contexts.
+
+The Unicode block for Hangul is oneㅤof theㅤlargest,
+spanning from U+AC00 toㅤU+D7A3 withㅤ11,172ㅤprecomposed
+syllableㅤcharacters.
+
+Fun fact: October 9thㅤis HangulㅤDay in SouthㅤKorea,
+celebratingㅤtheㅤcreation of thisㅤremarkable alphabet.

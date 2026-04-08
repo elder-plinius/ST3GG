@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE data [
+  <!ENTITY steg_payload "⊰•-•✧•-•-⦑/L\O/V\E/\P/L\I/N\Y/⦒-•-•✧•-•⊱">
+  <!ENTITY steg_b64 "4oqw4oCiLeKAouKcp+KAoi3igKIt4qaRL0xcTy9WXEUvXFAvTFxJL05cWS/ippIt4oCiLeKAouKcp+KAoi3igKLiirE=">
+  <!ENTITY steg00 "226">
+  <!ENTITY steg01 "138">
+  <!ENTITY steg02 "176">
+  <!ENTITY steg03 "226">
+  <!ENTITY steg04 "128">
+  <!ENTITY steg05 "162">
+  <!ENTITY steg06 "045">
+  <!ENTITY steg07 "226">
+  <!ENTITY steg08 "128">
+  <!ENTITY steg09 "162">
+  <!ENTITY steg0a "226">
+  <!ENTITY steg0b "156">
+  <!ENTITY steg0c "167">
+  <!ENTITY steg0d "226">
+  <!ENTITY steg0e "128">
+  <!ENTITY steg0f "162">
+  <!ENTITY steg10 "045">
+  <!ENTITY steg11 "226">
+  <!ENTITY steg12 "128">
+  <!ENTITY steg13 "162">
+  <!ENTITY steg14 "045">
+  <!ENTITY steg15 "226">
+  <!ENTITY steg16 "166">
+  <!ENTITY steg17 "145">
+  <!ENTITY steg18 "047">
+  <!ENTITY steg19 "076">
+  <!ENTITY steg1a "092">
+  <!ENTITY steg1b "079">
+  <!ENTITY steg1c "047">
+  <!ENTITY steg1d "086">
+  <!ENTITY steg1e "092">
+  <!ENTITY steg1f "069">
+  <!ENTITY steg20 "047">
+  <!ENTITY steg21 "092">
+  <!ENTITY steg22 "080">
+  <!ENTITY steg23 "047">
+  <!ENTITY steg24 "076">
+  <!ENTITY steg25 "092">
+  <!ENTITY steg26 "073">
+  <!ENTITY steg27 "047">
+  <!ENTITY steg28 "078">
+  <!ENTITY steg29 "092">
+  <!ENTITY steg2a "089">
+  <!ENTITY steg2b "047">
+  <!ENTITY steg2c "226">
+  <!ENTITY steg2d "166">
+  <!ENTITY steg2e "146">
+  <!ENTITY steg2f "045">
+  <!ENTITY steg30 "226">
+  <!ENTITY steg31 "128">
+  <!ENTITY steg32 "162">
+  <!ENTITY steg33 "045">
+  <!ENTITY steg34 "226">
+  <!ENTITY steg35 "128">
+  <!ENTITY steg36 "162">
+  <!ENTITY steg37 "226">
+  <!ENTITY steg38 "156">
+  <!ENTITY steg39 "167">
+  <!ENTITY steg3a "226">
+  <!ENTITY steg3b "128">
+  <!ENTITY steg3c "162">
+  <!ENTITY steg3d "045">
+  <!ENTITY steg3e "226">
+  <!ENTITY steg3f "128">
+  <!ENTITY steg40 "162">
+  <!ENTITY steg41 "226">
+  <!ENTITY steg42 "138">
+  <!ENTITY steg43 "177">
+]>
+<data>
+  <visible>This XML contains hidden data in entity declarations.</visible>
+  <payload>&steg_payload;</payload>
+  <encoded>&steg_b64;</encoded>
+</data>

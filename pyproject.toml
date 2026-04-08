@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stegg"
+version = "3.0.0"
+description = "Steganography toolkit — hide anything in any file, across every modality"
+readme = "README.md"
+license = {text = "AGPL-3.0-or-later"}
+requires-python = ">=3.9"
+authors = [
+    {name = "ST3GG Contributors"}
+]
+keywords = ["steganography", "lsb", "steg", "image", "encoding", "security", "cli", "ctf", "forensics"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Security",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Multimedia :: Graphics",
+]
+
+# Core: just what you need for CLI encode/decode/analyze
+dependencies = [
+    "Pillow>=10.0.0",
+    "numpy>=1.24.0",
+    "typer[all]>=0.9.0",
+    "rich>=13.0.0",
+]
+
+[project.optional-dependencies]
+# Terminal UI (Textual)
+tui = ["textual>=0.40.0"]
+# Web UI (NiceGUI + FastAPI)
+web = ["nicegui>=1.4.0", "fastapi>=0.100.0"]
+# Legacy web UI (Streamlit)
+web-legacy = ["streamlit>=1.28.0"]
+# AES-256-GCM encryption
+crypto = ["cryptography>=41.0.0"]
+# Everything
+all = [
+    "textual>=0.40.0",
+    "nicegui>=1.4.0",
+    "fastapi>=0.100.0",
+    "streamlit>=1.28.0",
+    "cryptography>=41.0.0",
+]
+
+[project.scripts]
+stegg = "cli:main_cli"
+stegg-tui = "tui:main"
+stegg-web = "webui:main"
+
+[project.urls]
+Homepage = "https://ste.gg"
+Repository = "https://github.com/elder-plinius/st3gg"
+Documentation = "https://github.com/elder-plinius/st3gg#readme"
+Issues = "https://github.com/elder-plinius/st3gg/issues"
+
+[tool.setuptools]
+py-modules = ["steg_core", "crypto", "analysis_tools", "cli", "tui", "webui", "app", "injector", "ascii_art"]
+
+[tool.setuptools.package-data]
+"*" = ["index.html", "f5stego-lib.js", "_headers", "wrangler.jsonc"]

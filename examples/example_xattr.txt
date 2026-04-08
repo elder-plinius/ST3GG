@@ -1,0 +1,3 @@
+This file contains hidden data in its filesystem extended attributes.
+Use 'getfattr -d' or 'xattr -l' to view them.
+The actual file content is innocuous.

@@ -1,0 +1,17 @@
+Braille Patterns Reference
+
+The Unicode Braille Patterns block (U+2800-U+28FF) contains 256
+characters representing all possible 8-dot Braille cells. Each
+dot position corresponds to a bit:
+
+  Dot 1 (bit 0)  Dot 4 (bit 3)
+  Dot 2 (bit 1)  Dot 5 (bit 4)
+  Dot 3 (bit 2)  Dot 6 (bit 5)
+  Dot 7 (bit 6)  Dot 8 (bit 7)
+
+Sample patterns:
+⣢⢊⢰⣢⢀⢢⠭⣢⢀⢢⣢⢜⢧⣢⢀⢢⠭⣢⢀⢢⠭⣢⢦⢑⠯⡌⡜⡏⠯⡖⡜⡅⠯⡜⡐⠯⡌⡜⡉⠯⡎⡜⡙⠯⣢⢦⢒⠭⣢⢀⢢⠭⣢⢀⢢⣢⢜⢧⣢⢀⢢⠭⣢⢀⢢⣢⢊⢱
+
+The blank Braille pattern (U+2800) renders as an empty space
+in most fonts, making it useful for accessibility applications.
+Each pattern above encodes a specific configuration of raised dots.

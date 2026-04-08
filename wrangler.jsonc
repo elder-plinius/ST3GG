@@ -1,0 +1,10 @@
+{
+  "name": "st3gg",
+  "compatibility_date": "2026-03-30",
+  "assets": {
+    "directory": "./"
+  },
+  // Only index.html and f5stego-lib.js need to be served
+  // All other files (Python, examples, etc.) are development-only
+  "rules": []
+}

@@ -1,0 +1,36 @@
+Unicode Normalization Reference
+Words borrowed from French often retain accent marks.
+In Unicode, these can be stored as NFC or NFD forms:
+
+  café
+  résumé
+  naïve
+  cliché
+  passé
+  sauté
+  touché
+  fiancée
+  exposé
+  pureé
+  meleé
+  debris
+  protegé
+  attaché
+  communiqué
+  risqué
+  soireé
+  flambé
+  canapé
+  matinée
+  entrée
+  negligeé
+  emigré
+  divorceé
+  employeé
+  frappeé
+  consommé
+  coupé
+  cremé
+  decor
+
+Total words: 30
