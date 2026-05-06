@@ -11,7 +11,7 @@ from textual.containers import Container, Horizontal, Vertical, ScrollableContai
 from textual.widgets import (
     Header, Footer, Static, Button, Input, Label,
     Select, Switch, TextArea, ProgressBar, TabbedContent, TabPane,
-    DirectoryTree, Markdown, DataTable, Log
+    DirectoryTree, Markdown, DataTable, RichLog
 )
 from textual.binding import Binding
 from textual.screen import Screen
@@ -304,8 +304,8 @@ class StegosaurusApp(App):
 
     def compose(self) -> ComposeResult:
         yield Header()
-        yield Container(
-            Vertical(
+        with Container(id="main-container"):
+            yield Vertical(
                 Static(DINO_ASCII, id="dino-display"),
                 Button("🔐 Encode", id="btn-encode", classes="menu-button"),
                 Button("🔓 Decode", id="btn-decode", classes="menu-button"),
@@ -315,20 +315,19 @@ class StegosaurusApp(App):
                 Static("[dim]───────────────────[/dim]", classes="subtitle"),
                 Static(f"[dim]{TAGLINES[0]}[/dim]", classes="subtitle"),
                 id="sidebar",
-            ),
-            Vertical(
-                TabbedContent(
-                    TabPane("Home", self._home_content(), id="tab-home"),
-                    TabPane("Encode", self._encode_content(), id="tab-encode"),
-                    TabPane("Decode", self._decode_content(), id="tab-decode"),
-                    TabPane("Analyze", self._analyze_content(), id="tab-analyze"),
-                    TabPane("Inject", self._inject_content(), id="tab-inject"),
-                    id="main-tabs",
-                ),
-                id="content",
-            ),
-            id="main-container",
-        )
+            )
+            with Vertical(id="content"):
+                with TabbedContent(id="main-tabs"):
+                    with TabPane("Home", id="tab-home"):
+                        yield from self._home_content()
+                    with TabPane("Encode", id="tab-encode"):
+                        yield from self._encode_content()
+                    with TabPane("Decode", id="tab-decode"):
+                        yield from self._decode_content()
+                    with TabPane("Analyze", id="tab-analyze"):
+                        yield from self._analyze_content()
+                    with TabPane("Inject", id="tab-inject"):
+                        yield from self._inject_content()
         yield Footer()
 
     def _home_content(self) -> ComposeResult:
@@ -392,7 +391,7 @@ class StegosaurusApp(App):
                 id="encode-data",
             ),
         )
-        yield Log(id="encode-log", highlight=True, markup=True)
+        yield RichLog(id="encode-log", highlight=True, markup=True)
 
     def _decode_content(self) -> ComposeResult:
         yield Static("[cyan]═══ DECODE DATA ═══[/cyan]", classes="panel-title")
@@ -430,7 +429,7 @@ class StegosaurusApp(App):
                 ),
             ),
         )
-        yield Log(id="decode-log", highlight=True, markup=True)
+        yield RichLog(id="decode-log", highlight=True, markup=True)
 
     def _analyze_content(self) -> ComposeResult:
         yield Static("[magenta]═══ ANALYZE IMAGE ═══[/magenta]", classes="panel-title")
@@ -440,7 +439,7 @@ class StegosaurusApp(App):
                 Button("🔍 Analyze", id="btn-do-analyze"),
             ),
             DataTable(id="analyze-results"),
-            Log(id="analyze-log", highlight=True, markup=True),
+            RichLog(id="analyze-log", highlight=True, markup=True),
         )
 
     def _inject_content(self) -> ComposeResult:
@@ -506,9 +505,9 @@ class StegosaurusApp(App):
 
     def do_encode(self) -> None:
         """Perform encoding"""
-        log = self.query_one("#encode-log", Log)
+        log = self.query_one("#encode-log", RichLog)
         log.clear()
-        log.write_line("[cyan]Starting encode...[/cyan]")
+        log.write("[cyan]Starting encode...[/cyan]")
 
         try:
             input_path = self.query_one("#encode-input", Input).value
@@ -521,46 +520,46 @@ class StegosaurusApp(App):
             password = self.query_one("#encode-password", Input).value
 
             if not input_path:
-                log.write_line("[red]Error: No input image specified[/red]")
+                log.write("[red]Error: No input image specified[/red]")
                 return
             if not text:
-                log.write_line("[red]Error: No data to encode[/red]")
+                log.write("[red]Error: No data to encode[/red]")
                 return
 
-            log.write_line(f"[dim]Loading image: {input_path}[/dim]")
+            log.write(f"[dim]Loading image: {input_path}[/dim]")
             image = Image.open(input_path)
-            log.write_line(f"[green]✓[/green] Image loaded: {image.width}x{image.height}")
+            log.write(f"[green]✓[/green] Image loaded: {image.width}x{image.height}")
 
             config = create_config(channels=channels, bits=bits, compress=use_compress)
             capacity = calculate_capacity(image, config)
-            log.write_line(f"[dim]Capacity: {capacity['human']}[/dim]")
+            log.write(f"[dim]Capacity: {capacity['human']}[/dim]")
 
             payload = text.encode('utf-8')
 
             if use_encrypt and password:
-                log.write_line("[dim]Encrypting payload...[/dim]")
+                log.write("[dim]Encrypting payload...[/dim]")
                 payload = encrypt(payload, password)
-                log.write_line("[green]✓[/green] Payload encrypted")
+                log.write("[green]✓[/green] Payload encrypted")
 
             if not output_path:
                 output_path = generate_injection_filename("chatgpt_decoder", channels)
 
-            log.write_line("[dim]Encoding...[/dim]")
+            log.write("[dim]Encoding...[/dim]")
             result = encode(image, payload, config, output_path)
 
-            log.write_line(f"[green]✓ SUCCESS![/green]")
-            log.write_line(f"[green]Output: {output_path}[/green]")
+            log.write(f"[green]✓ SUCCESS![/green]")
+            log.write(f"[green]Output: {output_path}[/green]")
             self.notify(f"Encoded to {output_path}", title="Success!")
 
         except Exception as e:
-            log.write_line(f"[red]Error: {e}[/red]")
+            log.write(f"[red]Error: {e}[/red]")
             self.notify(str(e), title="Error", severity="error")
 
     def do_decode(self) -> None:
         """Perform decoding"""
-        log = self.query_one("#decode-log", Log)
+        log = self.query_one("#decode-log", RichLog)
         log.clear()
-        log.write_line("[cyan]Starting decode...[/cyan]")
+        log.write("[cyan]Starting decode...[/cyan]")
 
         try:
             input_path = self.query_one("#decode-input", Input).value
@@ -571,40 +570,40 @@ class StegosaurusApp(App):
             password = self.query_one("#decode-password", Input).value
 
             if not input_path:
-                log.write_line("[red]Error: No input image specified[/red]")
+                log.write("[red]Error: No input image specified[/red]")
                 return
 
-            log.write_line(f"[dim]Loading image: {input_path}[/dim]")
+            log.write(f"[dim]Loading image: {input_path}[/dim]")
             image = Image.open(input_path)
-            log.write_line(f"[green]✓[/green] Image loaded")
+            log.write(f"[green]✓[/green] Image loaded")
 
             config = create_config(channels=channels, bits=bits, compress=use_compress)
 
-            log.write_line("[dim]Decoding...[/dim]")
+            log.write("[dim]Decoding...[/dim]")
             data = decode(image, config)
 
             if use_encrypt and password:
-                log.write_line("[dim]Decrypting...[/dim]")
+                log.write("[dim]Decrypting...[/dim]")
                 data = decrypt(data, password)
-                log.write_line("[green]✓[/green] Decrypted")
+                log.write("[green]✓[/green] Decrypted")
 
             try:
                 text = data.decode('utf-8')
                 self.query_one("#decode-output", TextArea).text = text
-                log.write_line(f"[green]✓ SUCCESS! Extracted {len(data)} bytes[/green]")
+                log.write(f"[green]✓ SUCCESS! Extracted {len(data)} bytes[/green]")
             except UnicodeDecodeError:
                 self.query_one("#decode-output", TextArea).text = data.hex()
-                log.write_line("[yellow]Binary data - showing hex[/yellow]")
+                log.write("[yellow]Binary data - showing hex[/yellow]")
 
             self.notify("Decode complete!", title="Success!")
 
         except Exception as e:
-            log.write_line(f"[red]Error: {e}[/red]")
+            log.write(f"[red]Error: {e}[/red]")
             self.notify(str(e), title="Error", severity="error")
 
     def do_analyze(self) -> None:
         """Perform analysis"""
-        log = self.query_one("#analyze-log", Log)
+        log = self.query_one("#analyze-log", RichLog)
         table = self.query_one("#analyze-results", DataTable)
         log.clear()
         table.clear()
@@ -612,14 +611,14 @@ class StegosaurusApp(App):
         try:
             input_path = self.query_one("#analyze-input", Input).value
             if not input_path:
-                log.write_line("[red]Error: No input image specified[/red]")
+                log.write("[red]Error: No input image specified[/red]")
                 return
 
-            log.write_line(f"[dim]Analyzing: {input_path}[/dim]")
+            log.write(f"[dim]Analyzing: {input_path}[/dim]")
             image = Image.open(input_path)
             analysis = analyze_image(image)
 
-            log.write_line(f"[green]✓[/green] {image.width}x{image.height} - {analysis['total_pixels']:,} pixels")
+            log.write(f"[green]✓[/green] {image.width}x{image.height} - {analysis['total_pixels']:,} pixels")
 
             for ch_name, ch_data in analysis['channels'].items():
                 lsb = ch_data['lsb_ratio']
@@ -643,14 +642,14 @@ class StegosaurusApp(App):
 
             max_ind = max(ch['lsb_ratio']['chi_square_indicator'] for ch in analysis['channels'].values())
             if max_ind > 0.3:
-                log.write_line("[red]⚠ HIGH PROBABILITY OF HIDDEN DATA[/red]")
+                log.write("[red]⚠ HIGH PROBABILITY OF HIDDEN DATA[/red]")
             elif max_ind > 0.1:
-                log.write_line("[yellow]⚠ Possible hidden data[/yellow]")
+                log.write("[yellow]⚠ Possible hidden data[/yellow]")
             else:
-                log.write_line("[green]✓ No obvious steganographic indicators[/green]")
+                log.write("[green]✓ No obvious steganographic indicators[/green]")
 
         except Exception as e:
-            log.write_line(f"[red]Error: {e}[/red]")
+            log.write(f"[red]Error: {e}[/red]")
 
     def gen_filename(self) -> None:
         """Generate injection filename"""
