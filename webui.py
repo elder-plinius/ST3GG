@@ -2733,7 +2733,7 @@ async def create_matryoshka_panel():
             refresh_carriers()
 
             # Carrier upload
-            carrier_upload_html, carrier_upload_js = create_drop_zone(
+            carrier_upload_html, carrier_upload_js = create_file_picker(
                 'matryoshka_carrier', 'image/png,image/jpeg,image/webp',
                 '/api/matryoshka/add_carrier', 'matryoshka'
             )
@@ -2809,7 +2809,7 @@ async def create_matryoshka_panel():
                 depth_slider.on('update:model-value', update_depth)
 
             # Image upload for decode
-            decode_upload_html, decode_upload_js = create_drop_zone(
+            decode_upload_html, decode_upload_js = create_file_picker(
                 'matryoshka_decode', 'image/png',
                 '/api/upload/decode', 'matryoshka'
             )
