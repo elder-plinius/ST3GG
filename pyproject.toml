@@ -8,7 +8,7 @@ version = "3.0.0"
 description = "Steganography toolkit — hide anything in any file, across every modality"
 readme = "README.md"
 license = {text = "AGPL-3.0-or-later"}
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [
     {name = "ST3GG Contributors"}
 ]
@@ -21,7 +21,6 @@ classifiers = [
     "Intended Audience :: Science/Research",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
@@ -48,6 +47,8 @@ web = ["nicegui>=1.4.0", "fastapi>=0.100.0"]
 web-legacy = ["streamlit>=1.28.0"]
 # AES-256-GCM encryption
 crypto = ["cryptography>=41.0.0"]
+# MCP server for AI agent integration
+mcp = ["mcp[cli]>=1.0.0"]
 # Everything
 all = [
     "textual>=0.40.0",
@@ -55,12 +56,14 @@ all = [
     "fastapi>=0.100.0",
     "streamlit>=1.28.0",
     "cryptography>=41.0.0",
+    "mcp[cli]>=1.0.0",
 ]
 
 [project.scripts]
 stegg = "cli:main_cli"
 stegg-tui = "tui:main"
 stegg-web = "webui:main"
+stegg-mcp = "mcp_server:main"
 
 [project.urls]
 Homepage = "https://ste.gg"
@@ -69,7 +72,7 @@ Documentation = "https://github.com/elder-plinius/st3gg#readme"
 Issues = "https://github.com/elder-plinius/st3gg/issues"
 
 [tool.setuptools]
-py-modules = ["steg_core", "crypto", "analysis_tools", "cli", "tui", "webui", "app", "injector", "ascii_art"]
+py-modules = ["steg_core", "crypto", "analysis_tools", "cli", "tui", "webui", "app", "injector", "ascii_art", "mcp_server"]
 
 [tool.setuptools.package-data]
 "*" = ["index.html", "f5stego-lib.js", "_headers", "wrangler.jsonc"]
