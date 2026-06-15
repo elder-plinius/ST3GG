@@ -61,6 +61,7 @@ all = [
 stegg = "cli:main_cli"
 stegg-tui = "tui:main"
 stegg-web = "webui:main"
+stegg-cli = "stegg_cli:main"
 
 [project.urls]
 Homepage = "https://ste.gg"
@@ -69,7 +70,7 @@ Documentation = "https://github.com/elder-plinius/st3gg#readme"
 Issues = "https://github.com/elder-plinius/st3gg/issues"
 
 [tool.setuptools]
-py-modules = ["steg_core", "crypto", "analysis_tools", "cli", "tui", "webui", "app", "injector", "ascii_art"]
+py-modules = ["steg_core", "crypto", "analysis_tools", "cli", "tui", "webui", "app", "injector", "ascii_art", "stegg_cli"]
 
 [tool.setuptools.package-data]
 "*" = ["index.html", "f5stego-lib.js", "_headers", "wrangler.jsonc"]
