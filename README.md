@@ -285,6 +285,7 @@ stegg encode image.png "{SPECTER:ENABLED}" -o stego.png
 pip install stegg[tui]      # Terminal UI (Textual)
 pip install stegg[web]      # Web UI (NiceGUI)
 pip install stegg[crypto]   # AES-256-GCM encryption
+pip install stegg[mcp]      # MCP server for AI agents
 pip install stegg[all]      # Everything
 ```
 
@@ -308,10 +309,28 @@ pip install -e ".[all]"
 ### Interfaces
 
 ```bash
-stegg --help          # CLI
+stegg --help          # Interactive CLI (Rich TUI output)
+stegg-cli --help      # Agent CLI (JSON output, subprocess-friendly)
 stegg-tui             # Terminal UI (requires: pip install stegg[tui])
 stegg-web             # Browser UI (requires: pip install stegg[web])
+stegg-mcp             # MCP server for AI agents (requires: pip install stegg[mcp])
 ```
+
+### AI Agent Integration
+
+Two interfaces for AI agents — pick based on context cost needs:
+
+```bash
+# CLI (subprocess, zero context cost — output stays out of LLM context)
+stegg-cli encode -i carrier.png -t "secret" -o stegged.png
+stegg-cli decode -i stegged.png
+stegg-cli analyze suspect.png --full
+
+# MCP server (stdio transport — results go into agent context)
+stegg-mcp  # or: uv run --extra mcp python3 mcp_server.py
+```
+
+See `skills/stegg-cli/` and `skills/stegg-stego/` for harness-agnostic agent skills, and `AGENTS.md` for the quick-reference guide.
 
 ---
 
