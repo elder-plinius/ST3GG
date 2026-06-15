@@ -14,6 +14,8 @@ import tempfile
 from pathlib import Path
 from typing import Any, Optional
 
+import numpy as np
+
 from mcp.server.fastmcp import FastMCP
 
 # ---------------------------------------------------------------------------
@@ -68,6 +70,27 @@ except Exception:
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
+
+class _NumpyEncoder(json.JSONEncoder):
+    """Handle numpy types that standard json can't serialize."""
+
+    def default(self, obj):
+        if isinstance(obj, (np.bool_,)):
+            return bool(obj)
+        if isinstance(obj, (np.integer,)):
+            return int(obj)
+        if isinstance(obj, (np.floating,)):
+            return float(obj)
+        if isinstance(obj, np.ndarray):
+            return obj.tolist()
+        return super().default(obj)
+
+
+def _json_dumps(obj: Any, **kwargs) -> str:
+    """JSON serialize with numpy type support."""
+    kwargs.setdefault("cls", _NumpyEncoder)
+    return json.dumps(obj, **kwargs)
+
 
 def _load_image(image_path: str) -> Image.Image:
     """Load an image from disk, raising a clear error on failure."""
@@ -137,18 +160,21 @@ def stegg_encode(
     Returns:
         JSON with output_path, payload_bytes, capacity info, and encryption status.
     """
-    image = _load_image(image_path)
+    try:
+        image = _load_image(image_path)
+    except (FileNotFoundError, OSError) as e:
+        return _json_dumps({"error": str(e)})
 
     # Resolve payload
     if payload_file:
         p = Path(payload_file).expanduser().resolve()
         if not p.exists():
-            return json.dumps({"error": f"Payload file not found: {p}"})
+            return _json_dumps({"error": f"Payload file not found: {p}"})
         payload = p.read_bytes()
     elif payload_text:
         payload = payload_text.encode("utf-8")
     else:
-        return json.dumps({"error": "Provide payload_text or payload_file"})
+        return _json_dumps({"error": "Provide payload_text or payload_file"})
 
     out = _resolve_output(output_path or "", image_path)
 
@@ -162,7 +188,7 @@ def stegg_encode(
 
     capacity = calculate_capacity(image, config)
     if len(payload) > capacity["usable_bytes"]:
-        return json.dumps({
+        return _json_dumps({
             "error": f"Payload too large: {len(payload)} bytes > {capacity['usable_bytes']} available",
             "capacity": capacity["human"],
         })
@@ -174,7 +200,7 @@ def stegg_encode(
 
     encode(image, payload, config, str(out))
 
-    return json.dumps({
+    return _json_dumps({
         "output_path": str(out),
         "payload_bytes": len(payload),
         "capacity": capacity["human"],
@@ -218,7 +244,10 @@ def stegg_decode(
         JSON with extracted text (UTF-8) or hex preview for binary data,
         plus byte count, config detected, and output_path if saved.
     """
-    image = _load_image(image_path)
+    try:
+        image = _load_image(image_path)
+    except (FileNotFoundError, OSError) as e:
+        return _json_dumps({"error": str(e)})
 
     config = None
     detected = False
@@ -242,10 +271,16 @@ def stegg_decode(
             seed=seed if seed else None,
         )
 
-    data = decode(image, config)
+    try:
+        data = decode(image, config)
+    except (ValueError, Exception) as e:
+        return _json_dumps({"error": f"Decode failed: {e}"})
 
     if password and decrypt:
-        data = decrypt(data, password)
+        try:
+            data = decrypt(data, password)
+        except Exception as e:
+            return _json_dumps({"error": f"Decryption failed: {e}"})
 
     result: dict[str, Any] = {
         "bytes": len(data),
@@ -266,7 +301,7 @@ def stegg_decode(
         result["hex_preview"] = data[:512].hex()
         result["encoding"] = "binary"
 
-    return json.dumps(result)
+    return _json_dumps(result)
 
 
 # ---- Analyze --------------------------------------------------------------
@@ -290,7 +325,10 @@ def stegg_analyze(
         JSON with channel stats, anomaly indicators, capacity estimates,
         and a verdict (normal / possible / high probability).
     """
-    image = _load_image(image_path)
+    try:
+        image = _load_image(image_path)
+    except (FileNotFoundError, OSError) as e:
+        return _json_dumps({"error": str(e)})
     analysis = analyze_image(image)
 
     # Compact summary
@@ -337,7 +375,7 @@ def stegg_analyze(
         except Exception as e:
             result["full_analysis_error"] = str(e)
 
-    return json.dumps(result)
+    return _json_dumps(result)
 
 
 # ---- Capacity -------------------------------------------------------------
@@ -358,10 +396,13 @@ def stegg_capacity(
     Returns:
         JSON with capacity in bytes and human-readable form.
     """
-    image = _load_image(image_path)
+    try:
+        image = _load_image(image_path)
+    except (FileNotFoundError, OSError) as e:
+        return _json_dumps({"error": str(e)})
     config = create_config(channels=channels, bits=bits_per_channel)
     cap = calculate_capacity(image, config)
-    return json.dumps({
+    return _json_dumps({
         "usable_bytes": cap["usable_bytes"],
         "human": cap["human"],
         "total_pixels": image.width * image.height,
@@ -387,11 +428,14 @@ def stegg_detect(
     Returns:
         JSON with detected (bool) and config details if found.
     """
-    image = _load_image(image_path)
+    try:
+        image = _load_image(image_path)
+    except (FileNotFoundError, OSError) as e:
+        return _json_dumps({"error": str(e)})
     detection = detect_encoding(image)
     if detection:
-        return json.dumps({"detected": True, "config": detection})
-    return json.dumps({"detected": False})
+        return _json_dumps({"detected": True, "config": detection})
+    return _json_dumps({"detected": False})
 
 
 # ---- PNG Chunk Injection --------------------------------------------------
@@ -423,7 +467,7 @@ def stegg_inject_chunk(
     """
     p = Path(image_path).expanduser().resolve()
     if not p.exists():
-        return json.dumps({"error": f"Image not found: {p}"})
+        return _json_dumps({"error": f"Image not found: {p}"})
     raw = p.read_bytes()
 
     if chunk_type == "iTXt":
@@ -436,7 +480,7 @@ def stegg_inject_chunk(
     out = Path(output_path).expanduser().resolve()
     out.write_bytes(modified)
 
-    return json.dumps({
+    return _json_dumps({
         "output_path": str(out),
         "chunk_type": chunk_type,
         "keyword": keyword,
@@ -464,7 +508,7 @@ def stegg_read_chunks(
     """
     p = Path(image_path).expanduser().resolve()
     if not p.exists():
-        return json.dumps({"error": f"Image not found: {p}"})
+        return _json_dumps({"error": f"Image not found: {p}"})
     raw = p.read_bytes()
 
     chunks = read_png_chunks(raw)
@@ -479,7 +523,7 @@ def stegg_read_chunks(
             "offset": c.get("offset", 0),
         })
 
-    return json.dumps({
+    return _json_dumps({
         "chunks": chunk_summary,
         "text_content": text_chunks,
         "total_chunks": len(chunks),
@@ -515,7 +559,7 @@ def stegg_inject_exif(
     """
     p = Path(image_path).expanduser().resolve()
     if not p.exists():
-        return json.dumps({"error": f"Image not found: {p}"})
+        return _json_dumps({"error": f"Image not found: {p}"})
 
     metadata: dict[str, str] = {}
     if comment:
@@ -531,10 +575,10 @@ def stegg_inject_exif(
             extra = json.loads(custom_fields)
             metadata.update(extra)
         except json.JSONDecodeError:
-            return json.dumps({"error": "custom_fields must be valid JSON"})
+            return _json_dumps({"error": "custom_fields must be valid JSON"})
 
     if not metadata:
-        return json.dumps({"error": "Provide at least one metadata field"})
+        return _json_dumps({"error": "Provide at least one metadata field"})
 
     image = Image.open(p)
     _, png_bytes = inject_metadata_pil(image, metadata)
@@ -542,7 +586,7 @@ def stegg_inject_exif(
     out = Path(output_path).expanduser().resolve()
     out.write_bytes(png_bytes)
 
-    return json.dumps({
+    return _json_dumps({
         "output_path": str(out),
         "injected_fields": list(metadata.keys()),
         "field_count": len(metadata),
@@ -576,7 +620,7 @@ def stegg_injection_filename(
         generate_injection_filename(template, channels)
         for _ in range(count)
     ]
-    return json.dumps({
+    return _json_dumps({
         "template": template,
         "channels": channels,
         "filenames": filenames,
@@ -599,7 +643,7 @@ def stegg_jailbreak_templates() -> str:
     for name in get_jailbreak_names():
         content = get_jailbreak_template(name)
         templates[name] = content[:120] + ("..." if len(content) > 120 else "")
-    return json.dumps({"templates": templates, "count": len(templates)})
+    return _json_dumps({"templates": templates, "count": len(templates)})
 
 
 # ---- Analysis Tools -------------------------------------------------------
@@ -624,14 +668,14 @@ def stegg_analysis_tool(
     """
     p = Path(file_path).expanduser().resolve()
     if not p.exists():
-        return json.dumps({"error": f"File not found: {p}"})
+        return _json_dumps({"error": f"File not found: {p}"})
     data = p.read_bytes()
 
     result = execute_action(action, data)
 
     if hasattr(result, "to_dict"):
-        return json.dumps(result.to_dict(), default=str)
-    return json.dumps({"result": str(result)})
+        return _json_dumps(result.to_dict(), default=str)
+    return _json_dumps({"result": str(result)})
 
 
 @mcp.tool()
@@ -645,7 +689,7 @@ def stegg_list_analysis_tools() -> str:
         JSON with sorted list of action names.
     """
     tools = list_available_tools()
-    return json.dumps({"tools": tools, "count": len(tools)})
+    return _json_dumps({"tools": tools, "count": len(tools)})
 
 
 # ---- Crypto Status --------------------------------------------------------
@@ -662,8 +706,8 @@ def stegg_crypto_status() -> str:
     """
     status = crypto_status()
     if isinstance(status, dict):
-        return json.dumps(status)
-    return json.dumps({"status": str(status)})
+        return _json_dumps(status)
+    return _json_dumps({"status": str(status)})
 
 
 # ---------------------------------------------------------------------------
