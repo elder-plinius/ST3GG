@@ -466,7 +466,7 @@ def analyze(
 
     for ch_name, ch_data in analysis['channels'].items():
         lsb = ch_data['lsb_ratio']
-        indicator = lsb['chi_square_indicator']
+        indicator = ch_data['chi_square_indicator']
 
         if indicator < 0.1:
             anomaly = "[green]✓ Normal[/green]"
@@ -499,7 +499,7 @@ def analyze(
 
     # Verdict
     max_indicator = max(
-        ch['lsb_ratio']['chi_square_indicator']
+        ch['chi_square_indicator']
         for ch in analysis['channels'].values()
     )
 
