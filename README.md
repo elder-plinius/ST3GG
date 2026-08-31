@@ -225,7 +225,7 @@ The AI agent has two modes:
 
 **🔮 Conceal** — Type a secret message, upload (or generate) a carrier image, and the agent hides your data using the optimal encoding method. One click from secret to stego image.
 
-Powered by OpenRouter. Works with Claude, GPT, Gemini, and other models.
+Powered by OpenAI-compatible AI gateways (OpenRouter or OrcaRouter). Works with Claude, GPT, Gemini, DeepSeek, and other models.
 
 ---
 
@@ -446,7 +446,8 @@ ST3GG/
 ║  ✓ Raw PNG parser (bypasses canvas premultiplied alpha)          ║
 ║  ✓ Password-derived headers (stealth mode)                       ║
 ║  ✓ AES-256-GCM with PBKDF2 600k iterations                      ║
-║  ✓ AI carrier image generation (OpenRouter + procedural)         ║
+║  ✓ AI carrier image generation (OpenRouter + OrcaRouter         ║
+║    + procedural)                                                 ║
 ║  ✓ 109 example files, 568 automated tests                        ║
 ║  ✓ pip install stegg                                              ║
 ║  ✓ 100% browser-based at ste.gg                                  ║

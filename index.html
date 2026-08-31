@@ -3173,17 +3173,25 @@
                     <h2 class="card-title" style="color: #8b9dc3;">🤖 AI Steg Analysis Agent</h2>
                     <p class="text-muted" style="font-size: 11px; margin-bottom: 16px;">
                         An autonomous AI agent that can both reveal hidden data and conceal secrets using all known steganography techniques.
-                        Powered by OpenRouter - intelligently tests every decoding method for the uploaded file type.
+                        Powered by OpenAI-compatible AI gateways - intelligently tests every decoding method for the uploaded file type.
                     </p>
 
                     <div class="form-group">
-                        <label>OpenRouter API Key</label>
+                        <label>Provider</label>
+                        <select id="aiagent-provider" class="select" onchange="getAgentProviderModels()">
+                            <option value="openrouter" selected>OpenRouter</option>
+                            <option value="orcarouter">OrcaRouter</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="aiagent-key-label">OpenRouter API Key</label>
                         <div style="display: flex; gap: 8px;">
                             <input type="password" id="aiagent-api-key" class="input" placeholder="sk-or-..." style="flex: 1;">
                             <button class="btn btn-secondary btn-sm" onclick="toggleApiKeyVisibility()" id="aiagent-key-toggle">👁</button>
                         </div>
                         <div class="text-muted" style="font-size: 10px; margin-top: 4px;">
-                            Get your key at <a href="https://openrouter.ai/keys" target="_blank" style="color: var(--secondary);">openrouter.ai/keys</a>
+                            Get your key at <a id="aiagent-keys-link" href="https://openrouter.ai/keys" target="_blank" style="color: var(--secondary);">openrouter.ai/keys</a>
                         </div>
                     </div>
 
@@ -15600,6 +15608,83 @@
             return text;
         }
 
+        // Provider registry for the AI Agent — each provider is an OpenAI-compatible
+        // gateway exposing a /v1/chat/completions endpoint plus a provider/model
+        // namespace. Adding a provider here makes it available in the AI Agent panel.
+        const AI_AGENT_PROVIDERS = {
+            openrouter: {
+                name: 'OpenRouter',
+                endpoint: 'https://openrouter.ai/api/v1',
+                keyPrefix: 'sk-or-',
+                models: {
+                    recommended: 'anthropic/claude-opus-4.6',
+                    list: [
+                        { id: 'anthropic/claude-opus-4.6', label: 'Claude Opus 4.6 (Recommended)' },
+                        { id: 'anthropic/claude-sonnet-4.6', label: 'Claude Sonnet 4.6' },
+                        { id: 'openai/gpt-5.4', label: 'GPT-5.4' },
+                        { id: 'google/gemini-3.1-pro', label: 'Gemini 3.1 Pro' },
+                        { id: 'x-ai/grok-4.20', label: 'Grok 4.20' },
+                        { id: 'anthropic/claude-haiku-4.5', label: 'Claude Haiku 4.5 (Fastest)' }
+                    ],
+                    keysUrl: 'https://openrouter.ai/keys',
+                    modelsUrl: 'https://openrouter.ai/models',
+                    imageModel: 'google/gemini-2.5-flash-image'
+                }
+            },
+            orcarouter: {
+                name: 'OrcaRouter',
+                endpoint: 'https://api.orcarouter.ai/v1',
+                keyPrefix: 'sk-orca-',
+                models: {
+                    recommended: 'orcarouter/fusion',
+                    list: [
+                        { id: 'orcarouter/fusion', label: 'OrcaRouter Fusion (Recommended)' },
+                        { id: 'orcarouter/auto', label: 'OrcaRouter Auto' },
+                        { id: 'anthropic/claude-opus-4.6', label: 'Claude Opus 4.6' },
+                        { id: 'anthropic/claude-sonnet-4.6', label: 'Claude Sonnet 4.6' },
+                        { id: 'openai/gpt-5.4', label: 'GPT-5.4' },
+                        { id: 'deepseek/deepseek-v4-flash', label: 'DeepSeek V4 Flash' },
+                        { id: 'google/gemini-2.5-flash', label: 'Gemini 2.5 Flash' }
+                    ],
+                    keysUrl: 'https://www.orcarouter.ai/solutions/api-keys',
+                    modelsUrl: 'https://www.orcarouter.ai/models',
+                    imageModel: 'google/gemini-2.5-flash-image'
+                }
+            }
+        };
+
+        function getAgentProvider() {
+            const providerId = document.getElementById('aiagent-provider')?.value || 'openrouter';
+            return AI_AGENT_PROVIDERS[providerId] || AI_AGENT_PROVIDERS.openrouter;
+        }
+
+        function getAgentProviderModels() {
+            const select = document.getElementById('aiagent-model');
+            const selected = select?.value;
+            const provider = getAgentProvider();
+            select.innerHTML = '';
+            for (const m of provider.models.list) {
+                const opt = document.createElement('option');
+                opt.value = m.id;
+                opt.textContent = m.label;
+                if (m.id === provider.models.recommended) opt.selected = true;
+                select.appendChild(opt);
+            }
+            // Keep a custom model if one was selected; otherwise default to recommended
+            if (selected && selected !== 'custom' && !provider.models.list.some(m => m.id === selected)) {
+                const opt = document.createElement('option');
+                opt.value = selected;
+                opt.textContent = selected;
+                opt.selected = true;
+                select.appendChild(opt);
+            }
+            const customOpt = document.createElement('option');
+            customOpt.value = 'custom';
+            customOpt.textContent = 'Custom model...';
+            select.appendChild(customOpt);
+            toggleCustomModel();
+        }
+
         // Tool definitions for the AI Agent
         const AI_AGENT_TOOLS = {
             // === DECODING TOOLS ===
@@ -20240,14 +20325,14 @@
 
             let generated = false;
 
-            // Try OpenRouter image generation
-            // Uses /api/v1/chat/completions with an image-capable model
-            // Ref: https://github.com/yusufipk/imagen-openrouter
+            // Try gateway AI image generation via the selected provider
+            // Uses /v1/chat/completions with an image-capable model
             if (apiKey) {
+                const provider = getAgentProvider();
                 statusEl.textContent = '\u23f3 Generating via AI...';
                 statusEl.style.color = '#8b5cf6';
                 try {
-                    const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+                    const response = await fetch(`${provider.endpoint}/chat/completions`, {
                         method: 'POST',
                         headers: {
                             'Authorization': `Bearer ${apiKey}`,
@@ -20256,7 +20341,7 @@
                             'X-Title': 'ST3GG Carrier Generator'
                         },
                         body: JSON.stringify({
-                            model: 'google/gemini-2.5-flash-image',
+                            model: provider.models.imageModel,
                             messages: [{
                                 role: 'user',
                                 content: `Generate a high-quality detailed photograph: ${prompt}. Rich textures, varied colors, natural detail.`
@@ -20269,7 +20354,7 @@
                     const message = data.choices?.[0]?.message;
                     if (!message) throw new Error('No response');
 
-                    // Extract image — OpenRouter returns in various formats per model
+                    // Extract image — gateways return in various formats per model
                     let imageDataUrl = null;
 
                     // Format 1: message.images[] (OpenRouter SDK format)
@@ -20514,7 +20599,8 @@
             aiAgentLog(`📦 Artifact extracted: ${artifact.format} (${formatSize(artifact.size)})`, 'success');
         }
 
-        async function callOpenRouter(messages, apiKey, model) {
+        async function callAgentProvider(messages, apiKey, model) {
+            const provider = getAgentProvider();
             const payload = {
                 model: model,
                 messages: messages,
@@ -20522,7 +20608,7 @@
                 temperature: 0.7
             };
 
-            const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+            const response = await fetch(`${provider.endpoint}/chat/completions`, {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${apiKey}`,
@@ -20535,7 +20621,7 @@
 
             if (!response.ok) {
                 const err = await response.text();
-                throw new Error(`OpenRouter API error: ${response.status} - ${err}`);
+                throw new Error(`${provider.name} API error: ${response.status} - ${err}`);
             }
 
             const data = await response.json();
@@ -20578,11 +20664,11 @@
             const maxIterations = parseInt(document.getElementById('aiagent-iterations').value);
 
             if (!apiKey) {
-                notify('Please enter your OpenRouter API key', 'error');
+                notify(`Please enter your ${getAgentProvider().name} API key`, 'error');
                 return;
             }
-            if (!apiKey.startsWith('sk-or-')) {
-                notify('Invalid key format — OpenRouter keys start with sk-or-', 'error');
+            if (!apiKey.startsWith(getAgentProvider().keyPrefix)) {
+                notify(`Invalid key format — ${getAgentProvider().name} keys start with ${getAgentProvider().keyPrefix}`, 'error');
                 return;
             }
 
@@ -20921,7 +21007,7 @@ USE YOUR INTELLIGENCE AS AN LLM:
                 setAIAgentStatus(`Thinking... (${iteration}/${maxIterations})`, '#a855f7');
 
                 try {
-                    const response = await callOpenRouter(messages, apiKey, model);
+                    const response = await callAgentProvider(messages, apiKey, model);
 
                     // Parse JSON from response
                     const jsonMatch = response.match(/```json\s*([\s\S]*?)\s*```/);
@@ -23313,7 +23399,7 @@ Binary data (${formatSize(data.length)})
             });
 
             // Try to restore API key from sessionStorage (cleared when tab closes — safer than localStorage)
-            const savedApiKey = sessionStorage.getItem('openrouter_api_key');
+            const savedApiKey = sessionStorage.getItem('aiagent_api_key');
             if (savedApiKey) {
                 document.getElementById('aiagent-api-key').value = savedApiKey;
             }
@@ -23321,10 +23407,24 @@ Binary data (${formatSize(data.length)})
             // Save API key to sessionStorage on change (NOT localStorage — prevents persistence across sessions)
             document.getElementById('aiagent-api-key')?.addEventListener('change', (e) => {
                 if (e.target.value) {
-                    sessionStorage.setItem('openrouter_api_key', e.target.value);
+                    sessionStorage.setItem('aiagent_api_key', e.target.value);
                 } else {
-                    sessionStorage.removeItem('openrouter_api_key');
+                    sessionStorage.removeItem('aiagent_api_key');
                 }
+            });
+
+            // Sync the key label, placeholder, and key link when the provider changes
+            document.getElementById('aiagent-provider')?.addEventListener('change', () => {
+                const provider = getAgentProvider();
+                document.getElementById('aiagent-key-label').textContent = `${provider.name} API Key`;
+                document.getElementById('aiagent-api-key').placeholder = `${provider.keyPrefix}...`;
+                document.getElementById('aiagent-keys-link').textContent = new URL(provider.models.keysUrl).hostname + new URL(provider.models.keysUrl).pathname;
+                document.getElementById('aiagent-keys-link').href = provider.models.keysUrl;
+                const hint = document.getElementById('aiagent-custom-hint');
+                const modelsUrl = provider.models.modelsUrl;
+                hint.innerHTML = `Any model ID from <a href="${modelsUrl}" target="_blank" style="color: var(--secondary);">${modelsUrl.replace('https://', '')}</a> — including free models`;
+                // Reset the key field when switching providers
+                document.getElementById('aiagent-api-key').value = '';
             });
         });
     </script>
