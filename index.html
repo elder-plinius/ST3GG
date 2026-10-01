@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <title>🥚 STE.GG 🦕</title>
+    <link rel="stylesheet" href="cellular-field.css">
     <style>
         :root {
             --primary: #00ff41;
@@ -1452,6 +1453,7 @@
             <button class="tab tab-matryoshka" data-tab="matryoshka" id="matryoshka-tab-btn" style="display: none;">🪆 Nested Stegg</button>
             <button class="tab tab-godmode" data-tab="godmode" id="godmode-tab-btn" style="display: none;">🧬 SPECTER</button>
             <button class="tab tab-textlab" data-tab="textlab" id="textlab-tab-btn">Text Lab</button>
+            <button class="tab" data-tab="cellular" id="cellular-tab-btn">Cellular Field</button>
             <button class="tab tab-aiagent" data-tab="aiagent" id="aiagent-tab-btn">Agent</button>
         </nav>
 
@@ -3167,6 +3169,68 @@
         </section>
 
         <!-- AI Agent Panel -->
+        <section class="panel" id="cellular-panel" aria-labelledby="cf-title">
+            <div class="card">
+                <div class="cf-heading">
+                    <h2 id="cf-title">Cellular Field</h2>
+                    <span>Reversible cellular automata · browser-local</span>
+                </div>
+                <p class="cf-intro">A mark becomes a moving field. Apply the inverse rule and the mark returns from the current cells alone. Change one cell in the twin to see how a small difference unfolds. This is reversible computation, not encryption.</p>
+                <div class="cf-controls">
+                    <label class="cf-seed-label" for="cf-seed">Your mark
+                        <input id="cf-seed" type="text" maxlength="80" value="STILL HERE" autocomplete="off">
+                    </label>
+                    <button type="button" class="btn btn-primary" id="cf-new">New text field</button>
+                    <button type="button" class="btn" id="cf-blank">Blank field</button>
+                    <button type="button" class="btn" id="cf-load">Load state</button>
+                    <input type="file" id="cf-file" accept=".json,application/json" class="cf-hidden" aria-label="Load cellular field JSON">
+                </div>
+                <div class="cf-controls" aria-label="Field transport">
+                    <label for="cf-steps">Steps per evolution
+                        <select id="cf-steps"><option value="64">64</option><option value="384" selected>384</option><option value="1024">1,024</option></select>
+                    </label>
+                    <button type="button" class="btn btn-primary" id="cf-evolve">Evolve</button>
+                    <button type="button" class="btn" id="cf-return">Return to zero</button>
+                    <button type="button" class="btn" id="cf-stop" disabled>Pause</button>
+                    <button type="button" class="btn" id="cf-step-back" aria-label="Apply one inverse step">−1 step</button>
+                    <button type="button" class="btn" id="cf-step-forward" aria-label="Apply one forward step">+1 step</button>
+                </div>
+                <div class="cf-worlds">
+                    <figure class="cf-world">
+                        <h3>Control <span>A</span></h3>
+                        <canvas id="cf-control" class="cf-canvas" width="192" height="192" tabindex="0" aria-describedby="cf-draw-help">A binary field. Use the text input to create a mark.</canvas>
+                        <figcaption id="cf-draw-help">At zero, draw here; hold Alt to erase. Keyboard: arrows move, Space toggles a cell. Both fields receive your mark.<strong id="cf-proof-control" class="cf-proof">Origin</strong></figcaption>
+                        <button type="button" class="btn" id="cf-save-control">Save Control JSON</button>
+                    </figure>
+                    <figure class="cf-world">
+                        <h3>Perturbed twin <span>B</span></h3>
+                        <canvas id="cf-twin" class="cf-canvas" width="192" height="192" aria-label="Twin field; amber pixels differ from Control">A matching field. Use Flip one cell to introduce a difference.</canvas>
+                        <figcaption>Click a cell or use the button below to flip one bit. Amber marks cells that differ from Control.<strong id="cf-proof-twin" class="cf-proof">Same world</strong></figcaption>
+                        <button type="button" class="btn" id="cf-save-twin">Save Twin JSON</button>
+                    </figure>
+                </div>
+                <div class="cf-metrics" aria-label="Current field measurements">
+                    <div><span>Time </span><output id="cf-time">0</output></div>
+                    <div><span>Different cells </span><output id="cf-difference">0</output></div>
+                    <div><span>Grid </span><output id="cf-dimensions">192 × 192</output></div>
+                </div>
+                <div class="cf-controls">
+                    <button type="button" class="btn" id="cf-perturb">Flip one twin cell</button>
+                    <button type="button" class="btn" id="cf-rejoin">Match twin to Control</button>
+                </div>
+                <p id="cf-message" role="status" aria-live="polite"></p>
+                <p id="cf-error" role="alert"></p>
+                <details class="cf-details">
+                    <summary>How reversal and portable states work</summary>
+                    <p>The Critters rule updates alternating 2 × 2 blocks on a wrapping grid. Each block has an exact inverse. Reversal uses the present cells and step counter; neither the engine nor the saved file keeps the original bitmap or a frame history. A phase-adjusted display removes the alternating background flash without changing the stored bits.</p>
+                    <p>Save either field, reload this page, and load its JSON to reverse it independently. The optional SHA-256 origin digest is only a comparison reference: it is not used by the inverse and does not authenticate a file. An edited state may return a different predecessor.</p>
+                    <p>Anyone with the state and rule can reverse it. Visual scrambling provides no cryptographic secrecy. JSON preserves the raw cells; a screenshot does not preserve the state or its step counter. Text becomes a bitmap, not a lossless text encoding.</p>
+                    <p>This viewer accepts even grids up to 256 × 256 and time 0–8,192. Existing <code>janus-state-v1</code> files remain compatible within those limits. New text and blank fields replace the current session; save first to keep one. Nothing in this feature is uploaded or automatically stored.</p>
+                    <p>Adapted from JANUS. Rule: Toffoli &amp; Margolus, <a href="https://people.csail.mit.edu/nhm/cam-book.pdf" target="_blank" rel="noopener noreferrer">Cellular Automata Machines</a>, §12.8.2. <a href="cellular-field-engine.js" target="_blank" rel="noopener">Inspect the engine</a>.</p>
+                </details>
+            </div>
+        </section>
+
         <section class="panel" id="aiagent-panel">
             <div class="grid">
                 <div class="card">
@@ -23328,5 +23392,7 @@ Binary data (${formatSize(data.length)})
             });
         });
     </script>
+    <script src="cellular-field-engine.js"></script>
+    <script src="cellular-field.js"></script>
 </body>
 </html>

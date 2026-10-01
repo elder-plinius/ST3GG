@@ -1,0 +1,37 @@
+/* Cellular Field uses the existing ST3GG palette and controls. */
+.tabs { flex-wrap: wrap; }
+#cellular-panel { color: #c9d1d9; }
+.cf-heading { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; flex-wrap: wrap; margin-bottom: 12px; }
+.cf-heading h2 { color: var(--primary); font-size: 20px; }
+.cf-intro { max-width: 78ch; line-height: 1.6; margin-bottom: 20px; }
+.cf-controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: end; margin-bottom: 16px; }
+.cf-controls label { display: grid; gap: 7px; color: #b0bac5; }
+.cf-controls .cf-seed-label { flex: 1 1 220px; }
+.cf-controls input, .cf-controls select { background: var(--bg-dark); border: 1px solid var(--border); border-radius: 4px; color: #e6edf3; padding: 10px; font: inherit; width: 100%; }
+#cellular-panel .btn { font-size: 12px; letter-spacing: 0; text-transform: none; }
+#cellular-panel button:disabled { opacity: .4; cursor: not-allowed; }
+#cellular-panel button:focus-visible, #cellular-panel input:focus-visible, #cellular-panel select:focus-visible, .cf-canvas:focus-visible { outline: 2px solid var(--secondary); outline-offset: 3px; }
+.cf-worlds { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.cf-world { min-width: 0; margin: 0; }
+.cf-world h3 { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; margin: 0 0 10px; color: var(--primary); }
+.cf-world:nth-child(2) h3 { color: var(--warning); }
+.cf-canvas { display: block; width: 100%; aspect-ratio: 1; background: #07110c; image-rendering: pixelated; border: 1px solid var(--border); touch-action: none; cursor: crosshair; }
+.cf-world figcaption { font-size: 12px; color: #aab4bf; line-height: 1.6; margin-top: 10px; }
+.cf-world .btn { margin-top: 12px; }
+.cf-proof { display: block; color: var(--primary); margin-top: 6px; min-height: 1.6em; }
+.cf-world:nth-child(2) .cf-proof { color: var(--warning); }
+.cf-metrics { display: flex; flex-wrap: wrap; gap: 10px 28px; padding: 16px 0; color: #e6edf3; font-variant-numeric: tabular-nums; }
+.cf-metrics span { color: #aab4bf; }
+#cf-message { color: var(--secondary); line-height: 1.6; min-height: 1.6em; overflow-wrap: anywhere; }
+#cf-error { color: #ff9191; line-height: 1.6; margin-top: 6px; }
+.cf-details { border-top: 1px solid var(--border); padding-top: 16px; margin-top: 18px; line-height: 1.7; }
+.cf-details summary { color: #c9d1d9; cursor: pointer; }
+.cf-details p { margin-top: 10px; max-width: 85ch; }
+.cf-details a { color: var(--secondary); }
+.cf-details code { overflow-wrap: anywhere; }
+.cf-hidden { display: none; }
+@media (max-width: 700px) {
+    .cf-worlds { grid-template-columns: 1fr; }
+    .cf-controls .btn { flex: 1 1 auto; }
+    .cf-controls .cf-seed-label { flex-basis: 100%; }
+}

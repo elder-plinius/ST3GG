@@ -4,7 +4,7 @@
   "assets": {
     "directory": "./"
   },
-  // Only index.html and f5stego-lib.js need to be served
+  // index.html, f5stego-lib.js and cellular-field*.js/css are browser assets.
   // All other files (Python, examples, etc.) are development-only
   "rules": []
 }

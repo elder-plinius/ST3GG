@@ -57,6 +57,55 @@ It runs **100% in your browser** (static site, no server) or as a **Python CLI/T
 
 ## ⊰ Why ST3GG? ⊱
 
+### Cellular Field: reversible visual computation
+
+Open **Cellular Field** in the browser tabs to turn a drawn or typed mark into
+a reversible cellular-automaton field. Evolve two matching fields, flip one
+cell in the twin, and apply the inverse rule to compare their predecessors.
+The control recovers from its current cells and step counter; no original
+bitmap or frame history is retained by the engine or state export.
+
+Save either field as JSON, reload, and load it to reverse independently.
+The optional SHA-256 origin digest is comparison metadata, not authentication
+or an input to the inverse. Existing `janus-state-v1` files are accepted within
+the viewer's limits: even grids up to 256 × 256, time 0–8,192. The file-format
+identifier remains stable although the feature is now called **Cellular Field**.
+
+This is **not encryption or a secrecy guarantee**: anyone with the state and
+rule can reverse it. Text is rasterized into a binary image; screenshots do
+not replace state files. The feature runs locally without uploads, providers,
+or persistent storage, and pauses when its tab or browser document is hidden.
+
+The dependency-free engine and UI are in `cellular-field-engine.js` and
+`cellular-field.js`. They adapt the JANUS instrument using the Critters
+Margolus rule from Toffoli & Margolus, *Cellular Automata Machines*, §12.8.2.
+Run the core checks with Node.js 18 or newer:
+
+```sh
+node --test tests/cellular-field/engine.test.cjs
+```
+
+These checks cover every binary 4 × 4 state against an independent reference,
+both partition phases, wrapped edges, signed time, malformed imports, one-bit
+perturbations, and reversal in a fresh process using only an exported state.
+
+For the UI regression, serve this directory on localhost (for example,
+`python3 -m http.server 8000 --bind 127.0.0.1`) and, in an environment with
+Playwright and Chromium available, run:
+
+```sh
+node tests/cellular-field/browser.cjs
+```
+
+`CELLULAR_FIELD_URL` selects a different local server;
+`PLAYWRIGHT_MODULE` can point to an existing Playwright installation.
+The check records screenshots and results in a temporary directory (override
+with `CELLULAR_FIELD_OUTPUT`). It exercises actual state downloads/imports,
+reversal after a fresh page load, rejected imports, keyboard drawing, tab
+navigation, and desktop/mobile layouts. It makes no model/provider calls.
+
+### Existing toolkit features
+
 | Feature | Other Tools | **ST3GG** |
 |---------|-------------|-----------|
 | Channel Options | RGB only | **15 presets** (R, G, B, A, RG, RB, RA, GB, GA, BA, RGB, RGA, RBA, GBA, RGBA) |
